@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="1">
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="xuexi">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -47,8 +50,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677508729787</updated>
-      <workItem from="1677508731200" duration="420000" />
+      <workItem from="1677508731200" duration="1004000" />
     </task>
+    <task id="LOCAL-00001" summary="xuexi">
+      <created>1677509729189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677509729189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,6 +67,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="xuexi" />
+    <option name="LAST_COMMIT_MESSAGE" value="xuexi" />
   </component>
 </project>
