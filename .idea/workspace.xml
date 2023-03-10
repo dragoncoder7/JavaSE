@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础" />
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +79,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -94,7 +96,7 @@
       <recent name="ClassDemo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DogTest">
     <configuration name="DogTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.DogTest" />
       <module name="JavaSE" />
@@ -196,7 +198,7 @@
       <workItem from="1678289938132" duration="3787000" />
       <workItem from="1678344748977" duration="8089000" />
       <workItem from="1678372381976" duration="2463000" />
-      <workItem from="1678453297044" duration="6660000" />
+      <workItem from="1678453297044" duration="6853000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -268,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678459981636</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Java基础">
+      <created>1678460100874</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678460100874</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
