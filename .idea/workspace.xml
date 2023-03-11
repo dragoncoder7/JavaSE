@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/ListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/MapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ClassDemo/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ClassDemo/TestDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassDemo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassDemo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassDemo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassDemo/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Animal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Dog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/DogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/DogTest.class" afterDir="false" />
@@ -229,7 +221,7 @@
       <workItem from="1678372381976" duration="2463000" />
       <workItem from="1678453297044" duration="6853000" />
       <workItem from="1678460274810" duration="682000" />
-      <workItem from="1678516743189" duration="10317000" />
+      <workItem from="1678516743189" duration="10382000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -315,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678460322501</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Java基础">
+      <created>1678529185892</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678529185892</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
