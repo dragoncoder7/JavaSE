@@ -5,25 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_9_0_33_[Changes]/ScannerDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_9_0_33_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_9_0_33__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AssembliesDemo/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegularClass/RandomDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegularClass/RandomDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/MaxMindMin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BranchStudy/MaxMindMin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/shuzu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BranchStudy/shuzu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/switchStudy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BranchStudy/switchStudy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/DogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/DogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Inner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Inner1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Inner1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Outer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Outer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Outer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Outer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People$Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/People$Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/People.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/TestDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/ArraysDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/ArraysDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/CalendarDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/CalendarDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/DateDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/DateDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/RandomDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/RandomDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/StringBuilderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/StringBuilderDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/SystemDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/SystemDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/Test/ArrayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularClass/Test/ArrayTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +288,7 @@
       <workItem from="1678808616961" duration="771000" />
       <workItem from="1678811288674" duration="612000" />
       <workItem from="1678891395142" duration="3309000" />
-      <workItem from="1678949853364" duration="7509000" />
+      <workItem from="1678949853364" duration="7807000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -393,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678529309229</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Java基础">
+      <created>1678958092320</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678958092320</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
