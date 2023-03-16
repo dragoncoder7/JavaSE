@@ -12,9 +12,9 @@ public class RandomDemo {
         int m = sc.nextInt();
         int n = sc.nextInt();
         if (m > n){
-            System.out.println(random.nextInt(n, m));
+            System.out.println(random.nextInt(m - n + 1) + n);
         } else {
-            System.out.println(random.nextInt(m, n));
+            System.out.println(random.nextInt(n - m + 1) + m);
         }
         sc.close();
     }

@@ -25,7 +25,7 @@ public class MapTest {
                 String name = sc.next();
                 Course course = new Course(id, name);
                 courseMap.put(id, course);
-                System.out.println(courseMap);
+                System.out.println(courseMap.values());
             } else {
                 System.out.println("id 已被占用！");
             }
@@ -38,7 +38,7 @@ public class MapTest {
         for(String crID: keySet) {
             Course cr = courseMap.get(crID);
             if(cr != null){
-                System.out.println("课程：" + cr.name);
+                System.out.println("课程：" + cr.name +"id: "+cr.id);
             }
         }
     }
@@ -108,6 +108,5 @@ public class MapTest {
         mt.testRemove();
         mt.testModify();
         mt.testEntrySet();
-
     }
 }
