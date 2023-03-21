@@ -103,7 +103,7 @@
       <recent name="ClassDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DogTest">
+  <component name="RunManager">
     <configuration name="DogTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.DogTest" />
       <module name="JavaSE" />
@@ -117,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ListTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AssembliesDemo.ListTest" />
       <module name="JavaSE" />
       <extension name="coverage">
@@ -238,7 +238,6 @@
       <list>
         <item itemvalue="Application.RandomDemo" />
         <item itemvalue="Application.TestDemo" />
-        <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.Outer" />
       </list>
     </recent_temporary>
@@ -269,6 +268,8 @@
       <workItem from="1678811288674" duration="612000" />
       <workItem from="1678891395142" duration="3309000" />
       <workItem from="1678949853364" duration="11263000" />
+      <workItem from="1679045408032" duration="2135000" />
+      <workItem from="1679390711295" duration="16886000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -396,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678958281585</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Java基础">
+      <created>1679045479807</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679045479807</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
