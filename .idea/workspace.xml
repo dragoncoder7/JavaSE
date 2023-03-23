@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LambdaDemo/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LanQiao/OneTwoThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LanQiao/ProblemsStatics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LanQiao/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LanQiao/ThreeYuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/FunctionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/PredicateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LanQiao/BeverageExchange.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LanQiao/OneTwoThree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LanQiao/ProblemsStatics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LanQiao/ScoreEval.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LanQiao/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LambdaDemo/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LambdaDemo/LambdaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LanQiao/BeverageExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LanQiao/BeverageExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LanQiao/ScoreEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LanQiao/ScoreEval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Outer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Outer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.Outer" />
       <module name="JavaSE" />
       <extension name="coverage">
@@ -169,7 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="RandomDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RegularClass.RandomDemo" />
       <module name="JavaSE" />
       <extension name="coverage">
@@ -221,7 +237,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.TestDemo" />
       <module name="JavaSE" />
       <extension name="coverage">
@@ -234,13 +250,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.RandomDemo" />
-        <item itemvalue="Application.TestDemo" />
-        <item itemvalue="Application.Outer" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Application.DogTest" />
+      <item itemvalue="Application.ListTest" />
+      <item itemvalue="Application.MapTest" />
+      <item itemvalue="Application.Outer" />
+      <item itemvalue="Application.People" />
+      <item itemvalue="Application.RandomDemo" />
+      <item itemvalue="Application.StringBufferDemo" />
+      <item itemvalue="Application.StringBuilderDemo" />
+      <item itemvalue="Application.Stringlength" />
+      <item itemvalue="Application.TestDemo" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -269,7 +290,10 @@
       <workItem from="1678891395142" duration="3309000" />
       <workItem from="1678949853364" duration="11263000" />
       <workItem from="1679045408032" duration="2135000" />
-      <workItem from="1679390711295" duration="16886000" />
+      <workItem from="1679390711295" duration="18914000" />
+      <workItem from="1679483810580" duration="5189000" />
+      <workItem from="1679491077878" duration="162000" />
+      <workItem from="1679541771590" duration="3025000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -404,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679045479807</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Java基础">
+      <created>1679418463705</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679418463705</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

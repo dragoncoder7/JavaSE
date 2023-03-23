@@ -1,11 +1,9 @@
 package LanQiao;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class ScoreEval {
-    private static double avg;
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -37,7 +35,7 @@ public class ScoreEval {
                 min = s;
         }
         System.out.println(sum);
-        float avg = sum / n;
+        double avg = sum / n;
         System.out.println(max);
         System.out.println(min);
         System.out.printf("%.2f", avg);
