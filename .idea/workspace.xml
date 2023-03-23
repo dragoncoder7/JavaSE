@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/BeverageExchange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LanQiao/BeverageExchange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/ThreeYuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LanQiao/ThreeYuan.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -97,6 +99,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DesignModeDemo" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="ClassDemo.Animal" />
     </key>
@@ -278,7 +283,9 @@
       <workItem from="1679390711295" duration="18914000" />
       <workItem from="1679483810580" duration="5189000" />
       <workItem from="1679491077878" duration="162000" />
-      <workItem from="1679541771590" duration="3912000" />
+      <workItem from="1679541771590" duration="13715000" />
+      <workItem from="1679578249172" duration="2783000" />
+      <workItem from="1679582360857" duration="3607000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -427,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679545043306</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Java基础">
+      <created>1679550696460</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679550696460</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,6 +485,16 @@
     <MESSAGE value="第二次提交" />
     <MESSAGE value="Java基础" />
     <option name="LAST_COMMIT_MESSAGE" value="Java基础" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
