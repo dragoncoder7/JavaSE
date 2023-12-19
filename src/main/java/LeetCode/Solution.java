@@ -1,7 +1,5 @@
 package LeetCode;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -97,6 +95,6 @@ class Solution {
         //String[] strings = {"flower","flow","flight"};
         String[] strings = {"cir","car"};
         System.out.println(longestCommonPrefix(strings));
-        longestCommonPrefix1(strings);
+        System.out.println(longestCommonPrefix1(strings));
     }
 }
