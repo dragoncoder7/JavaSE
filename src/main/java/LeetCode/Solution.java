@@ -58,10 +58,9 @@ class Solution {
                 longestStr = str;
             }
         }
-        List list = new ArrayList();
+        ArrayList<String> list = new ArrayList<>();
         for (String str : strs){
             int n = 0;
-            int m = 0;
             for (int i = 0; i < str.length(); i++){
                 if (str.charAt(i) == longestStr.charAt(i)){
                     n++;
@@ -69,15 +68,15 @@ class Solution {
                     break;
                 }
             }
-            list.add(n);
+            list.add(String.valueOf(n));
             System.out.println(list);
         }
-        Iterator<Integer> iterator = list.iterator();
+        Iterator<String> iterator = list.iterator();
         int element = 999;
         // 遍历集合
         while (iterator.hasNext()) {
             // 获取下一个元素
-            int i = iterator.next();
+            int i = Integer.parseInt(iterator.next());
             if (i <= element){
                 element = i;
             }

@@ -8,11 +8,6 @@ public class reverseArrays {
 //            if(i != n)
 //                swap
 //        }
-        int[] newarrs = new int[n];
-        for (int i = n; i >=0 ; i--) {
-            newarrs[n-i] = arrs[i];
-        }
-        System.out.println(newarrs);
     }
 //    public void swap(int a, int b){
 //        int t = b;
