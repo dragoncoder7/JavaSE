@@ -1,5 +1,7 @@
 package LeetCode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -46,7 +48,8 @@ class Solution {
     /*
     自己写的版本
      */
-    public  String longestCommonPrefix1(String[] strs) {
+
+    public static String longestCommonPrefix1(String[] strs) {
         int longest = 0;
 
         String longestStr = "";
@@ -94,5 +97,6 @@ class Solution {
         //String[] strings = {"flower","flow","flight"};
         String[] strings = {"cir","car"};
         System.out.println(longestCommonPrefix(strings));
+        longestCommonPrefix1(strings);
     }
 }
