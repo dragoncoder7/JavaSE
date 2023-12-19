@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础" />
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSE.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AssembliesDemo/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/PD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/PD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,14 +70,16 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.9.0" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\apache-maven-3.9.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2MKGBK5HYwKCqHvWbWJEpVhjqO4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -63,37 +88,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;ClassDemo.Animal&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/10262/Desktop/源码/Prevention&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "ClassDemo.Animal",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "D:/Java_Project/JavaSE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="DesignModeDemo" />
@@ -105,7 +132,7 @@
       <recent name="ClassDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DogTest">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="DogTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.DogTest" />
       <module name="JavaSE" />
@@ -184,6 +211,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Solution" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringBufferDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StringStudy.StringBufferDemo" />
       <module name="JavaSE" />
@@ -236,6 +276,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="reverseArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringStudy.reverseArrays" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StringStudy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringStudy.wang" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StringStudy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.DogTest" />
       <item itemvalue="Application.ListTest" />
@@ -247,7 +313,17 @@
       <item itemvalue="Application.StringBuilderDemo" />
       <item itemvalue="Application.Stringlength" />
       <item itemvalue="Application.TestDemo" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.wang" />
+      <item itemvalue="Application.reverseArrays" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.wang" />
+        <item itemvalue="Application.reverseArrays" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -282,6 +358,22 @@
       <workItem from="1679541771590" duration="13715000" />
       <workItem from="1679578249172" duration="2783000" />
       <workItem from="1679582360857" duration="3712000" />
+      <workItem from="1679588829495" duration="216000" />
+      <workItem from="1679644184141" duration="1093000" />
+      <workItem from="1679663238430" duration="1054000" />
+      <workItem from="1679665185696" duration="297000" />
+      <workItem from="1679668783905" duration="223000" />
+      <workItem from="1679669051179" duration="722000" />
+      <workItem from="1679932136775" duration="2252000" />
+      <workItem from="1682178094443" duration="38000" />
+      <workItem from="1682689135001" duration="916000" />
+      <workItem from="1688711967460" duration="94000" />
+      <workItem from="1692283492286" duration="2022000" />
+      <workItem from="1692287512015" duration="740000" />
+      <workItem from="1692345035425" duration="4000" />
+      <workItem from="1692450380235" duration="167000" />
+      <workItem from="1693407022132" duration="1255000" />
+      <workItem from="1702981161855" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -451,21 +543,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -477,6 +554,21 @@
                 </option>
               </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
