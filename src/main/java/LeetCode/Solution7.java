@@ -2,8 +2,6 @@ package LeetCode;
 
 import java.util.Arrays;
 
-import static java.util.Arrays.binarySearch;
-
 class Solution7{
     public static void main(String[] args) {
         int[] ints = new int[100];
@@ -12,14 +10,14 @@ class Solution7{
         }
         Solution7 s = new Solution7();
         System.out.println(s.searchInsert1(ints, 80));
-        Arrays.binarySearch(ints, 88);
+        System.out.println(Arrays.binarySearch(ints, 88));
     }
 
     /**
      * 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中,返回它将会被按顺序插入的位置
-     * @param nums
-     * @param target
-     * @return
+     * @param nums 传入数组
+     * @param target 目标值
+     * @return 返回值
      */
     public int searchInsert(int[] nums, int target) {
         int index = -1;
