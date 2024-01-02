@@ -155,11 +155,8 @@ public class Solution {
 
         public static void main(String[] args) {
             int[][] intervals = new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-            MyFunctionalInterface MyFunctionalInterface = (tag) -> true;
             System.out.println(Arrays.deepToString(merge(intervals)));
             System.out.println(Arrays.deepToString(merge1(intervals)));
-            System.out.println(MyFunctionalInterface.test("abc"));
-            MyFunctionalInterface.printDescription();
         }
     }
 
