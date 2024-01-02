@@ -11,8 +11,6 @@ public class Solution9 {
         int n = 0;
         int m = s.length - 1;
         for (int i = 0; i < s.length - i - 1; i++) {
-            char a = s[n];
-            char b = s[m];
             exchange(n,m,s);
             n++;
             m--;

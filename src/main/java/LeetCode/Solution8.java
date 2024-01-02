@@ -15,14 +15,5 @@ class Solution8 {
             return -1;
         }
     }
-
-    public void changeDate(Date createTime){
-        int month = createTime.getMonth();
-        int year = createTime.getYear();
-    // 处理月份和年份
-        int targetFinishYear = month >= 3 ? year : year - 1;
-        int targetYear = month >= 3 ? year + 1 : year;
-        int targetResultYear = month >= 3 ? year : year - 1;
-    }
 }
 
