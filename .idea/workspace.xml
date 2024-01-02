@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="Java基础">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="LeetCode题解">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSE.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AssembliesDemo/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AssembliesDemo/ListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/PD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/PD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +48,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="0405fee3-d265-422f-a735-c1965c764895" />
+        <option name="accountId" value="2211e90e-0ea7-4e6a-a888-a1011f3d0a74" />
         <option name="url" value="https://github.com/dragoncoder7/JavaSE.git" />
       </UrlAndAccount>
     </option>
@@ -77,9 +67,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2MKGBK5HYwKCqHvWbWJEpVhjqO4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -103,13 +93,13 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/Java_Project/JavaSE",
+    "last_opened_file_path": "E:/Project_my/JavaSE/src/main/java/LeetCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -124,6 +114,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="DesignModeDemo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project_my\JavaSE\src\main\java\LeetCode" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="ClassDemo.Animal" />
@@ -374,6 +367,7 @@
       <workItem from="1692450380235" duration="167000" />
       <workItem from="1693407022132" duration="1255000" />
       <workItem from="1702981161855" duration="4956000" />
+      <workItem from="1704193265391" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -579,7 +573,8 @@
     <MESSAGE value="xuexi" />
     <MESSAGE value="第二次提交" />
     <MESSAGE value="Java基础" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java基础" />
+    <MESSAGE value="LeetCode题解" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode题解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
