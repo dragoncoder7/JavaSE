@@ -1,5 +1,6 @@
 package LeetCode;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,7 +10,7 @@ public class Solution2 {
     public static String reverseWords(String s) {
 
         String[] strings = s.split(" ");
-        List<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < strings.length; i++) {
             strings[i] = strings[i].trim();
             if (!strings[i].isEmpty() && !strings[i].isBlank()){
@@ -17,7 +18,7 @@ public class Solution2 {
 
             }
         }
-        list = list.reversed();
+
 
         StringBuilder t = new StringBuilder();
         for (String string : list) {
