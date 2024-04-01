@@ -1,7 +1,7 @@
 package LeetCode;
 public class Solution26 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+        /* 杩欓噷杈撳叆鎮ㄧ殑浠ｇ爜 */
         String s = "UD";
         Solution26 s26 = new Solution26();
         System.out.println(s26.judgeCircle(s));

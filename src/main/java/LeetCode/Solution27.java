@@ -4,7 +4,7 @@ import static java.lang.Math.max;
 
 public class Solution27 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+
         Solution27 s = new Solution27();
         int res = s.maxLengthBetweenEqualCharacters("cbzxy");
         //System.out.println(res);
@@ -13,9 +13,9 @@ public class Solution27 {
         //Assert.assertEquals(3, res);
         String ss = "";
         System.out.println(ss);
-        ss += "6268876 : 43313 ????HR???级大风阿萨德富士达";
+        ss += "6268876 : 43313 鎴戠殑";
         System.out.println(ss);
-        ss += "fdasfasdfa文件发昆山的v";
+        ss += "fdasfasdfa锟侥硷拷锟斤拷锟斤拷山锟斤拷v";
         System.out.println(ss);
 
     }

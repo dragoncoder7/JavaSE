@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Solution25 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+        /* 杩欓噷杈撳叆鎮ㄧ殑浠ｇ爜 */
         Solution25 s = new Solution25();
         //System.out.println(s.lengthOfLastWord("luffy is still joyboy"));
         String[] strings =  {"5","-2","4","C","D","9","+","+"};

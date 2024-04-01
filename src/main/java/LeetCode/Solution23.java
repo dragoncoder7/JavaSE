@@ -1,7 +1,7 @@
 package LeetCode;
 public class Solution23 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+        /* 杩欓噷杈撳叆鎮ㄧ殑浠ｇ爜 */
         int[] nums = {9,72,34,29,-49,-22,-77,-17,-66,-75,-44,-30,-24};
         Solution23 s = new Solution23();
         System.out.println(s.arraySign(nums));

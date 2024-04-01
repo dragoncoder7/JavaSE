@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class Solution22 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+        /* 杩欓噷杈撳叆鎮ㄧ殑浠ｇ爜 */
         int[] digits = {5,6,2,0,0,4,6,2,4,9};
         int[] res = plusOne(digits);
         System.out.println(Arrays.toString(res));
     }
-    // 请在这里定义您需要的其他函数
+    // 璇峰湪杩欓噷瀹氫箟鎮ㄩ渶瑕佺殑鍏朵粬鍑芥暟
         public static int[] plusOne(int[] digits) {
             for (int i = digits.length - 1; i >= 0; i--) {
                 digits[i]++;

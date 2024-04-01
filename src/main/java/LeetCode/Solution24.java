@@ -4,8 +4,9 @@ import java.util.HashMap;
 
 public class Solution24 {
     public static void main(String[] args) {
-        /* ÕâÀïÊäÈëÄúµÄ´úÂë */
+        /* è¿™é‡Œè¾“å…¥æ‚¨çš„ä»£ç  */
         Solution24 s = new Solution24();
+        System.out.println("æˆ‘çš„ä¸–ç•Œ å› ä¸ºæœ‰ä½ æ‰ä¼šç¾");
         System.out.println(s.romanToInt("III"));
     }
 
@@ -25,7 +26,7 @@ public class Solution24 {
      * Given a roman numeral, convert it to an integer.
      * @param s a roman numeral
      * @return an integer
-     * @apiNote ÂŞÂíÊı×Ö°üº¬ÒÔÏÂÆßÖÖ×Ö·û: I£¬ V£¬ X£¬ L£¬C£¬D ºÍ M¡£
+     * @apiNote ç½—é©¬æ•°å­—åŒ…å«ä»¥ä¸‹ä¸ƒç§å­—ç¬¦: Iï¼Œ Vï¼Œ Xï¼Œ Lï¼ŒCï¼ŒD å’Œ Mã€‚
      */
     public int romanToInt(String s) {
         HashMap<String,Integer> map = new HashMap<>();
