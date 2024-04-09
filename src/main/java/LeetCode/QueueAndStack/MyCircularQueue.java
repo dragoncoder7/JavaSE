@@ -1,4 +1,4 @@
-package QueueAndStack;
+package LeetCode.QueueAndStack;
 
 /*MyCircularQueue circularQueue = new MyCircularQueue(3); // 设置长度为 3
         circularQueue.enQueue(1); // 返回 true

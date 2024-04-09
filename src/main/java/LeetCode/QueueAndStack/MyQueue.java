@@ -1,4 +1,4 @@
-package QueueAndStack;
+package LeetCode.QueueAndStack;
 
 import java.util.ArrayList;
 import java.util.List;
