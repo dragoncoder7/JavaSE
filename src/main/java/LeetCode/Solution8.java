@@ -15,5 +15,19 @@ class Solution8 {
             return -1;
         }
     }
+
+    public boolean isAnagram(String s, String t) {
+        char[] ss = s.toCharArray();
+        char[] tt = t.toCharArray();
+        
+        int sss = 0, ttt = 0;
+        for (char value : ss) {
+            sss += value;
+        }
+        for (char c : tt) {
+            ttt += c;
+        }
+        return (sss == ttt);
+    }
 }
 

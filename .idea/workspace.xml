@@ -4,38 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="LeetCode2024.3.1 题解">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="自己电脑上写的leetCode 推git">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Outer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Outer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People$Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/People$Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/People.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDemo/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/ExceptionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/ExceptionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IO_Demo/FileCut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IO_Demo/FileCut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/FlatMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/FlatMapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/FunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/FunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/MergeStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/MergeStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/PredicateDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/PredicateDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/StreamTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LambdaDemo/StreamTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/ScoreEval.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LanQiao/ScoreEval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegexDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegexDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +20,7 @@
   </component>
   <component name="DatabaseLocalColorSettings">
     <colors>
-      <entry key="cde47035-7f53-46f8-91de-3eb262f4b56a" value="Green" />
+      <entry key="cde47035-7f53-46f8-91de-3eb262f4b56a" value="Orange" />
     </colors>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -121,13 +97,12 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;oracle&quot;
+      &quot;mysql&quot;
     ]
   }
 }</component>
@@ -145,28 +120,13 @@
       <recent name="ClassDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCDemo">
+  <component name="RunManager" selected="Application.Solution13">
     <configuration name="DogTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassDemo.DogTest" />
       <module name="JavaSE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ClassDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Database.JDBCDemo" />
-      <module name="JavaSE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -354,26 +314,21 @@
       <item itemvalue="Application.StringBuilderDemo" />
       <item itemvalue="Application.Stringlength" />
       <item itemvalue="Application.TestDemo" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.Solution13" />
-      <item itemvalue="Application.reverseArrays" />
+      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.wang" />
-      <item itemvalue="Application.JDBCDemo" />
+      <item itemvalue="Application.reverseArrays" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.reverseArrays" />
-        <item itemvalue="Application.wang" />
-        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Solution13" />
-        <item itemvalue="Application.JDBCDemo" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.wang" />
+        <item itemvalue="Application.reverseArrays" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\maoyunlong\AppData\Roaming\Subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="" />
@@ -424,18 +379,6 @@
       <workItem from="1702981161855" duration="4956000" />
       <workItem from="1704193265391" duration="227000" />
       <workItem from="1704296106681" duration="1916000" />
-      <workItem from="1705305004496" duration="1962000" />
-      <workItem from="1705908699034" duration="1111000" />
-      <workItem from="1708486758121" duration="11117000" />
-      <workItem from="1708652222317" duration="14963000" />
-      <workItem from="1709024216800" duration="1333000" />
-      <workItem from="1709079514515" duration="64000" />
-      <workItem from="1709079614256" duration="29788000" />
-      <workItem from="1709706024072" duration="3388000" />
-      <workItem from="1709791292173" duration="4376000" />
-      <workItem from="1709890329671" duration="693000" />
-      <workItem from="1710117527036" duration="5010000" />
-      <workItem from="1710207684085" duration="13240000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -598,23 +541,7 @@
       <option name="project" value="LOCAL" />
       <updated>1679588139565</updated>
     </task>
-    <task id="LOCAL-00024" summary="LeetCode题解">
-      <option name="closed" value="true" />
-      <created>1705135085803</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1705135085803</updated>
-    </task>
-    <task id="LOCAL-00025" summary="LeetCode2024.3.1 题解">
-      <option name="closed" value="true" />
-      <created>1709285483502</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1709285483502</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,8 +585,7 @@
     <MESSAGE value="第二次提交" />
     <MESSAGE value="Java基础" />
     <MESSAGE value="LeetCode题解" />
-    <MESSAGE value="LeetCode2024.3.1 题解" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode2024.3.1 题解" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode题解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,78 +594,11 @@
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="15" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution14.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution15.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution20.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution20.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution23.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution24.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution24.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution26.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
-    <expand>
-      <path>
-        <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
-        <item name="dir{file://E:/Project_my/JavaSE}" type="462c0819:PsiDirectoryNode" />
-      </path>
-      <path>
-        <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
-        <item name="dir{file://E:/Project_my/JavaSE}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src}" type="462c0819:PsiDirectoryNode" />
-      </path>
-      <path>
-        <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
-        <item name="dir{file://E:/Project_my/JavaSE}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src/main}" type="462c0819:PsiDirectoryNode" />
-      </path>
-      <path>
-        <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
-        <item name="dir{file://E:/Project_my/JavaSE}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src/main}" type="462c0819:PsiDirectoryNode" />
-        <item name="dir{file://E:/Project_my/JavaSE/src/main/java}" type="462c0819:PsiDirectoryNode" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
 </project>
