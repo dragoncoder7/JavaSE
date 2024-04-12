@@ -1,0 +1,364 @@
+<changelist name="Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]" date="1704936635037" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2024/1/11 9:30 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/ThrowTest.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/ThrowTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ThrowTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Dog.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Dog.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Dog.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/ListTest.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/ListTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ListTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/BranchStudy/switchStudy.class" />
+    <option name="AFTER_PATH" value="target/classes/BranchStudy/switchStudy.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/switchStudy.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/CatchException.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/CatchException.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/CatchException.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/ChatRoom.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/ChatRoom.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ChatRoom.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/BranchStudy/shuzu.class" />
+    <option name="AFTER_PATH" value="target/classes/BranchStudy/shuzu.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/shuzu.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/IO_Demo/Test.class" />
+    <option name="AFTER_PATH" value="target/classes/IO_Demo/Test.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Test.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/AbstractChatRoom.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/AbstractChatRoom.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/AbstractChatRoom.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/ThreeYuan.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/ThreeYuan.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ThreeYuan.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/sum.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/sum.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/sum.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/MapTest.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/MapTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MapTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Proxy.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Proxy.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Proxy.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/PD.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/PD.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/PD.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/Stringlength.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/Stringlength.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Stringlength.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/IO_Demo/FileCut.class" />
+    <option name="AFTER_PATH" value="target/classes/IO_Demo/FileCut.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/FileCut.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/Course.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/Course.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Course.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/ProblemsStatics.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/ProblemsStatics.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ProblemsStatics.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/LambdaTest$MathOperation.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/LambdaTest$MathOperation.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/LambdaTest$MathOperation.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/TestDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/TestDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/TestDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/BranchStudy/MaxMindMin.class" />
+    <option name="AFTER_PATH" value="target/classes/BranchStudy/MaxMindMin.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MaxMindMin.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/IO_Demo/FileDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/IO_Demo/FileDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/FileDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/CalendarDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/CalendarDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/CalendarDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/MergeStream.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/MergeStream.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MergeStream.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/DogTest.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/DogTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/DogTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/ArraysDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/ArraysDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ArraysDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/BeverageExchange.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/BeverageExchange.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/BeverageExchange.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Inner1.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Inner1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Inner1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/ProxyDemo/RealSubject.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/ProxyDemo/RealSubject.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/RealSubject.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/Test.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/Test.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Test1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AlgorithmDemo/MergeSort.class" />
+    <option name="AFTER_PATH" value="target/classes/AlgorithmDemo/MergeSort.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MergeSort.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/LambdaTest$GreetingService.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/LambdaTest$GreetingService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/LambdaTest$GreetingService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/ExceptionTest.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/ExceptionTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ExceptionTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/User.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/User.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/User.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/Client.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/Client.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Client.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/FunctionTest.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/FunctionTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/FunctionTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/People$Student.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/People$Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/People$Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/StringBufferDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/StringBufferDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/StringBufferDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/OneTwoThree.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/OneTwoThree.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/OneTwoThree.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/StreamTest.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/StreamTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/StreamTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/ScannerDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/ScannerDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ScannerDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/Test/ArrayTest.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/Test/ArrayTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ArrayTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/SystemDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/SystemDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/SystemDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/FlatMapTest.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/FlatMapTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/FlatMapTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/weiyunsuan.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/weiyunsuan.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/weiyunsuan.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/SetTest.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/SetTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/SetTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/RandomDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/RandomDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/RandomDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/Student.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/StringBuilderDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/StringBuilderDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/StringBuilderDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/StringStudy/StringBuilderDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/StringStudy/StringBuilderDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/StringBuilderDemo1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AssembliesDemo/CollectionsDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/AssembliesDemo/CollectionsDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/CollectionsDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/MultipleCapturesDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/MultipleCapturesDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MultipleCapturesDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LanQiao/ScoreEval.class" />
+    <option name="AFTER_PATH" value="target/classes/LanQiao/ScoreEval.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ScoreEval.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Outer.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Outer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Outer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/People.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/People.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/People.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/PredicateDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/PredicateDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/PredicateDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/ExceptionStackTrace.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/ExceptionStackTrace.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/ExceptionStackTrace.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/Main.class" />
+    <option name="AFTER_PATH" value="target/classes/Main.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Subject.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Subject.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Subject.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExceptionHandleDemo/MyAriException.class" />
+    <option name="AFTER_PATH" value="target/classes/ExceptionHandleDemo/MyAriException.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/MyAriException.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Outer$1.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Outer$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Outer$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LambdaDemo/LambdaTest.class" />
+    <option name="AFTER_PATH" value="target/classes/LambdaDemo/LambdaTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/LambdaTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegularClass/DateDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegularClass/DateDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/DateDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Inner.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Inner.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Inner.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserA.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserA.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/UserA.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/AlgorithmDemo/InsertSort.class" />
+    <option name="AFTER_PATH" value="target/classes/AlgorithmDemo/InsertSort.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/InsertSort.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserB.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserB.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/UserB.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/RegexDemo.class" />
+    <option name="AFTER_PATH" value="target/classes/RegexDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/RegexDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserC.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/MediatorDemo/UserC.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/UserC.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Client.class" />
+    <option name="AFTER_PATH" value="target/classes/DesignModeDemo/ProxyDemo/Client.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Client1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Animal.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Animal.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Animal.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ClassDemo/Test.class" />
+    <option name="AFTER_PATH" value="target/classes/ClassDemo/Test.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_1_11_9_30_[Changes]/Test2.class" />
+  </binary>
+</changelist>

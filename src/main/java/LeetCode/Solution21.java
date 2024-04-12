@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Solution21 {
     public static void main(String[] args) {
-        /* 这里输入您的代码 */
+        /* 杩欓噷杈撳叆鎮ㄧ殑浠ｇ爜 */
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         int res = removeDuplicates(nums);
         System.out.println(res);
