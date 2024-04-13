@@ -10,7 +10,7 @@ public class Solution {
         if (root == null) {
             return res;
         }
-
+        //Deque 双端队列  LinkedList
         Deque<TreeNode> stack = new LinkedList<>();
         TreeNode node = root;
         while (!stack.isEmpty() || node != null) {
