@@ -15,5 +15,9 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="@10.10.1.59" uuid="c44eca86-ee18-4fe6-b52d-4efeba207afe">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="ORACLE" exact-version="0" />
+      <schema-mapping />
+    </data-source>
   </component>
 </project>
