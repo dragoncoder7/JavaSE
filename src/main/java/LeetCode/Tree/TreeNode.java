@@ -38,8 +38,8 @@ public class TreeNode {
 
     /**
      * 前序遍历 根左右
-     * @param root
-     * @return
+     * @param root 2
+     * @return 3
      */
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> lists = new ArrayList<>();
@@ -76,8 +76,8 @@ public class TreeNode {
 
     /**
      * 前序遍历 根右左 迭代算法
-     * @param root
-     * @return
+     * @param root 根节点
+     * @return 返回列表
      */
     public List<Integer> preorderTraversal1(TreeNode root) {
         List<Integer> lists = new ArrayList<>();
@@ -102,8 +102,8 @@ public class TreeNode {
 
     /**
      * 中序遍历 左根右 迭代算法
-     * @param root
-     * @return
+     * @param root 1
+     * @return 2
      */
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> lists = new ArrayList<>();
