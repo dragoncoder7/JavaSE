@@ -18,7 +18,8 @@ public class Solution15 {
     public List<Integer> getRow(int rowIndex) {
         List<List<Integer>> lists = new ArrayList<>();
         for (int i = 0; i < rowIndex + 1; i++){
-            List<Integer> list = new ArrayList<>(){};
+            List<Integer> list = new ArrayList<>() {
+            };
             for (int j = 0; j < i + 1; j++){
                 if (j == 0 || j == i){
                     list.add(1);
@@ -37,7 +38,7 @@ public class Solution15 {
      * @return 返回行数据
      */
     public List<Integer> getRow1(int rowIndex) {
-        List<Integer> row = new ArrayList<Integer>();
+        List<Integer> row = new ArrayList<>();
         row.add(1);
         for (int i = 1; i <= rowIndex; ++i) {
             row.add(0);

@@ -21,75 +21,82 @@ package LeetCode.QueueAndStack;
 
         */
 class MyCircularQueue {
-    private int head;
-    private int tail;
-
-    private int[] data;
+    private int front;
+    private int rear;
+    private int capacity;
+    private int[] elements;
 
     public MyCircularQueue(int k) {
-        data = new int[k];
-        head = -1;
-        tail = -1;
-    }
-
-    public boolean isEmpty() {
-        return head == -1 && tail == -1;
-    }
-
-    public boolean isFull() {
-        //我这里是分两种情况去判断了 一种是尾指针在头指针后面 一种是在前面 这两种其实可以统一的
-        /*if (tail < head && tail + 1 == head){
-            return true;
-        }
-        return tail == data.length - 1 && head == 0;*/
-        return tail + 1 % data.length == head;//直接简单一个判断就返回了
+        capacity = k + 1;
+        elements = new int[capacity];
+        rear = front = 0;
     }
 
     public boolean enQueue(int value) {
-        //需要有一个队列是否已满的判断
-        if (isFull()){
+        if (isFull()) {
             return false;
         }
-        if (isEmpty()){
-            head = 0;
-            //tail = 0;
-        }
-        tail++;
-        tail = tail % data.length;//保证数组不会越界
-        data[tail] = value;
+        elements[rear] = value;
+        rear = (rear + 1) % capacity;
         return true;
     }
 
     public boolean deQueue() {
-        if (isEmpty()){
+        if (isEmpty()) {
             return false;
         }
-        if (head == tail){
-            head = -1;
-            tail = -1;
-            return true;
-        }
-        head++;
-        head = head % data.length;//保证数组不会越界
+        front = (front + 1) % capacity;
         return true;
     }
 
     public int Front() {
-        if (head == -1){
+        if (isEmpty()) {
             return -1;
         }
-        return data[head];
+        return elements[front];
     }
 
     public int Rear() {
-        if (tail == -1){
+        if (isEmpty()) {
             return -1;
         }
-        return data[tail];
+        return elements[(rear - 1 + capacity) % capacity];
+    }
+
+    public boolean isEmpty() {
+        return rear == front;
+    }
+
+    public boolean isFull() {
+        return ((rear + 1) % capacity) == front;
     }
 
 
+    public static void main(String[] args) {
+        MyCircularQueue circularQueue = new MyCircularQueue(3); // 设置长度为 3
+        circularQueue.enQueue(1); // 返回 true
+        System.out.println(circularQueue.deQueue());// 返回 true
+        /*circularQueue.enQueue(2); // 返回 true
+        circularQueue.enQueue(3); // 返回 true
+        circularQueue.enQueue(4); // 返回 false，队列已满*/
+        circularQueue.Rear(); // 返回 3
+        circularQueue.isFull(); // 返回 true
+
+        circularQueue.enQueue(4); // 返回 true
+        circularQueue.Rear(); // 返回 4
+    }
 }
+
+/**
+ * Your MyCircularQueue object will be instantiated and called as such:
+ * MyCircularQueue obj = new MyCircularQueue(k);
+ * boolean param_1 = obj.enQueue(value);
+ * boolean param_2 = obj.deQueue();
+ * int param_3 = obj.Front();
+ * int param_4 = obj.Rear();
+ * boolean param_5 = obj.isEmpty();
+ * boolean param_6 = obj.isFull();
+ */
 
 /**
  * Your MyCircularQueue object will be instantiated and called as such:

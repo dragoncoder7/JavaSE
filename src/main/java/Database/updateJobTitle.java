@@ -8,17 +8,52 @@ public class updateJobTitle {
 
         Class.forName("oracle.jdbc.driver.OracleDriver");
 
-        String url = "jdbc:oracle:thin:@10.10.1.59:1521:oatst?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC";
+        String url = "jdbc:oracle:thin:@10.10.1.191:1521:ecology?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC";
         String username = "ecology";
         String password = "ecology";
 
         Connection connection = DriverManager.getConnection(url, username, password);
 
         connection.setAutoCommit(false);
-
+        //6731622 formtable_main_3297
         Statement statement = connection.createStatement();
+        ResultSet rs = statement.executeQuery("select * from formtable_main_3297 a where a.requestid = 6731622");
 
-        Statement statement1 = connection.createStatement();
+        //ResultSet rs = statement.executeQuery("select qjsjq,qjsjz,qjsc1 from formtable_main_3106 a order by a.requestid desc");
+
+        int count = 0;
+        while (rs.next()){
+            String sl = rs.getString("sl");
+            if (sl == null){
+                sl = "123";
+            }
+            if (sl.isEmpty()){
+                System.out.println("sl is empty:"+sl);
+            }
+            System.out.println(sl);
+            /*String StartTime = rs.getString("qjsjq");
+            String OverTime = rs.getString("qjsjz");
+            String beginDate = StartTime.substring(0,StartTime.length()-6);//请假时间日期部分
+            String beginTime = StartTime.substring(StartTime.length()-5);//请假时间小时部分
+            String endDate = OverTime.substring(0,StartTime.length()-6);//请假时间日期部分
+            String endTime = OverTime.substring(StartTime.length()-5);//请假时间小时部分
+            //String beginDate = StartTime.substring(0,8);//请假时间日期部分
+            System.out.println(beginDate);
+            //String beginTime = StartTime.substring(9);//请假时间小时部分
+            System.out.println(beginTime);
+            //String endDate = OverTime.substring(0,8);//请假时间日期部分
+            System.out.println(endDate);
+            //String endTime = OverTime.substring(9);//请假时间小时部分
+            System.out.println(endTime);
+            count++;
+            if (count == 100){
+                break;
+            }*/
+        }
+        rs.close();
+        statement.close();
+        connection.close();
+        /*Statement statement1 = connection.createStatement();
 
         //获得HR系统人员用OA账号且岗位不为空、OA账号正常使用 人名工号都一致的OA账号人员
         String query = "select * from uf_a01 a inner join hrmresource b on a.a0190= b.workcode and a.a0101 = b.lastname where b.status in(0,1,2,3) and a.a01zjtitle is not null";
@@ -106,6 +141,6 @@ public class updateJobTitle {
         resultSet.close();
         statement.close();
         statement1.close();
-        connection.close();
+        connection.close();*/
     }
 }

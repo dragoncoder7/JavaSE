@@ -26,6 +26,12 @@ public class Solution30 {
         System.out.println(s.minimumSteps("011101"));*/
         //s.swap(1,new int[]{1,2,3},1);
         String StartTime = "2024-6-8 07:40";
+        String[] res = StartTime.split(" ");
+        for (String t:
+             res) {
+            System.out.println(t);
+        }
+        System.out.println("res:"+Arrays.toString(res));
         String OverTime = "2024-6-8 08:10";
         String beginDate = StartTime.substring(0,StartTime.length()-6);//请假时间日期部分
         String beginTime = StartTime.substring(StartTime.length()-5);//请假时间小时部分
