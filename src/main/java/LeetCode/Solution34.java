@@ -5,8 +5,6 @@ import java.util.Arrays;
 public class Solution34 {
     public static void main(String[] args) {
         /* 这里输入您的代码 */
-
-
         Solution34 s = new Solution34();
 
         char[][] board = s.tictactoe(new int[][]{{0,0},{2,0},{1,1},{2,1},{2,2}});
