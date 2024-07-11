@@ -7,16 +7,15 @@ public class Solution34 {
         /* 这里输入您的代码 */
         Solution34 s = new Solution34();
 
-        char[][] board = s.tictactoe(new int[][]{{0,0},{2,0},{1,1},{2,1},{2,2}});
+        char[][] board = s.ticktacktoe(new int[][]{{0,0},{2,0},{1,1},{2,1},{2,2}});
         System.out.println(Arrays.deepToString(board));
         System.out.println(s.diagonalSum(new int[][]{{1,2,3},{4,5,6},{7,8,9}}));
         System.out.println(4 & 1);
-        String ss = "";
+        
         System.out.println(s.myPow(2.0000,-2));
     }
-    public char[][] tictactoe(int[][] moves) {
+    public char[][] ticktacktoe(int[][] moves) {
         char[][] board = new char[3][3];
-        char c = 'A';
         for (int i = 0; i < moves.length; i++) {
             if (i % 2 == 0) {
                 board[moves[i][0]][moves[i][1]] = 'A';
