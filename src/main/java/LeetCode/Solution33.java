@@ -90,24 +90,4 @@ public class Solution33 {
         }
         return ret;
     }
-    /**
-     * 思路：for循环逆序 先判断该点是否一致 若一致 continue
-     * 若不一致，则尾数+1 判断加完后的点是否在deadends中，若在则-1 dfs 反向 返回min（两向） 考虑进位
-     * @param deadends
-     * @param target
-     * @return
-     */
-    public int openLock(String[] deadends, String target) {
-        //String target = "0202";
-        String init = "0000";
-        int nums = 0;
-        //String[] deadens = {"0201","0101"};
-
-        for (int i = init.length() - 1; i >= 0; i--) {
-            int count = 0;
-            //nums += dfs(init, target, deadends,i);
-
-        }
-       return 0;
-    }
 }

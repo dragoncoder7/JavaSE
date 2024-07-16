@@ -1,17 +1,15 @@
 package demo.Controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class ControllerTest {
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public String test(){
+    @GetMapping(path = "/test")
+    public String test(@RequestParam(value = "name", defaultValue = "World") String name){
         System.out.println("test");
-        return "test";
+        return "test content:"+name;
     }
     public static void main(String[] args) {
 

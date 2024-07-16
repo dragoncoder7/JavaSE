@@ -19,7 +19,8 @@ public class SqlSeverConnection {
         Statement st = dbConn.createStatement();
 
         String sql = "select A01bzzj from A01 where a0190 = 'C0157569'";
-
+        String starttime = "2024-07-06 08:45";
+        String endtime = "2024-07-06 08:50";
         ResultSet rs = st.executeQuery(sql);
 
         while (rs.next()) {
