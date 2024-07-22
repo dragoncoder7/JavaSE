@@ -23,8 +23,10 @@ public class postMethod {
                 .build();
         HttpPost httpPost = new HttpPost(stage+"/oauth/token");
         httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
-        String json = "grant_type=client_credentials&scope=write";
-            httpPost.setEntity(new StringEntity(json));
+        //String json = "grant_type=client_credentials&scope=write";
+        httpPost.setEntity(new StringEntity("grant_type=client_credentials&scope=write"));
+        /*httpPost.setHeader("grant_type","client_credentials");
+        httpPost.setHeader("scope","write");*/
         httpPost.setHeader("Authorization","Basic "+ Base64.encodeBase64String(APP_KEY.concat(":").concat(APP_SECURET).getBytes()));
         System.out.println(httpPost.getMethod());
         httpPost.setConfig(requestConfig);

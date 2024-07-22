@@ -37,7 +37,7 @@ public class HrmServiceTestCase extends junit.framework.TestCase {
 
         // Test operation
         boolean value = false;
-        value = binding.changeUserPassword(new java.lang.String(), new java.lang.String(), new java.lang.String());
+        value = binding.changeUserPassword("", "", "");
         // TBD - validate results
     }
 
