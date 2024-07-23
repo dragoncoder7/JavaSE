@@ -1,19 +1,13 @@
-import WebService.WorkflowService;
-import WebService.WorkflowServicePortType;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.crypto.asymmetric.KeyType;
 import cn.hutool.crypto.asymmetric.RSA;
 
 public class Main {
     public static void main(String[] args) {
-        /*WorkflowService workflowService = new WorkflowService();
-        WorkflowServicePortType workflowServicePortType = workflowService.getWorkflowServiceHttpPort();
-        boolean s = workflowServicePortType.deleteRequest(7001078,231129);*/
+
 
         //System.out.println(s);
-        String time,date,HRid;
-        time = "10:00:00";
-        date = "2023-03-01";
+
         String startTime = "2024-07-01 08:00";
         String endTime = "2024-07-20 17:30";
         int id = 433039;
