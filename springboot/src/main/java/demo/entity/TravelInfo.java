@@ -3,8 +3,8 @@ package demo.entity;
 import lombok.Builder;
 import lombok.Data;
 import java.io.File;
-import java.util.Date;
 
+@Builder
 @Data
 public class TravelInfo {
     private String employeeID;

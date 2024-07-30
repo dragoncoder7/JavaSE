@@ -26,12 +26,12 @@ public class TravelServiceImp implements TravelService {
 
     TokenService tokenService;
 
-//    @Autowired
-//    public TravelServiceImp(TravelMapper travelMapper, TokenService tokenService) {
-//        // 默认构造器
-//        this.travelMapper = travelMapper;
-//        this.tokenService = tokenService;
-//    }
+    @Autowired
+    public TravelServiceImp(TravelMapper travelMapper, TokenService tokenService) {
+        // 默认构造器
+        this.travelMapper = travelMapper;
+        this.tokenService = tokenService;
+    }
 
 
     @Override
