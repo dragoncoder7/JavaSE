@@ -53,7 +53,7 @@ public class TAController {
     public void createTravelApply(@Param("requestId") Integer requestId) throws JsonProcessingException {
         TravelInfo travelInfo = null;
         String initiated = initdata();
-        LOGGER.info(travelService.createTravelApply(requestId));
+        LOGGER.info("controller输出："+travelService.createTravelApply(requestId));
         //ResultSet resultSet = travelMapper.getTravelInfoInfo(requestId);
 //        while (resultSet.next()){
 //            travelBean = TravelInfo.builder()
@@ -69,8 +69,7 @@ public class TAController {
 //                    .build();
 //            }
         //select gh,qsrq1,jzrq1,cclx,sy,ydjp,zwdlr,xxdd,ccry from fomrtable_main_17 where requestid = #{requestId}
-        LOGGER.info(String.valueOf(travelInfo));
-        System.out.println(initiated);
+
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(initiated);
 

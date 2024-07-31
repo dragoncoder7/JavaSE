@@ -1,10 +1,9 @@
 package demo.entity;
 
-import lombok.Builder;
 import lombok.Data;
 import java.io.File;
 
-@Builder
+
 @Data
 public class TravelInfo {
     private String employeeID;
@@ -35,5 +34,4 @@ public class TravelInfo {
 
     private String departmentOID = null;
 
-    public TravelInfo(){}
 }
