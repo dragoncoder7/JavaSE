@@ -11,7 +11,6 @@ import demo.Service.TokenService;
 import demo.Service.TravelService;
 import demo.entity.TravelInfo;
 import demo.mapper.ecology.TravelMapper;
-import demo.mapper.hr.LeaveMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -183,13 +182,13 @@ public class TravelServiceImp implements TravelService {
         List<String> workAgentlist = travelMapper.getWorkAgents(requestId);
         for (Iterator<String> iterator = workAgentlist.iterator(); iterator.hasNext(); ) {
             String s = iterator.next();
-            if (!isHasHeliosAccount(getHeliosPeopleInfo(s))) {
+            if (isHasHeliosAccount(getHeliosPeopleInfo(s))) {
                 iterator.remove();  // 使用 Iterator 的 remove 方法来删除元素
             }
         }
         travelInfo.setWorkAgent(String.join(",",workAgentlist));
 
-        if (!isHasHeliosAccount(response)){
+        if (isHasHeliosAccount(response)){
             LOGGER.info("员工不存在，该人员没有汇联易账号");
             return null;
         }
@@ -230,12 +229,12 @@ public class TravelServiceImp implements TravelService {
             JsonNode jsonNode = objectMapper.readTree(responseBody);
             if (jsonNode.get("errorCode") == null){
                 LOGGER.info(responseBody);
-                return true;
+                return false;
             }
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        return false;
+        return true;
     }
 
     public String test(){
