@@ -1,22 +1,27 @@
 package demo.Service.imp;
 
+import demo.entity.Message;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import demo.HttpsUtils.Https;
+import demo.Utils.Https;
 import demo.Service.TokenService;
 import demo.Service.TravelService;
 import demo.entity.TravelInfo;
-import demo.mapper.TravelMapper;
+import demo.mapper.ecology.TravelMapper;
+import demo.mapper.hr.LeaveMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.UriComponentsBuilder;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.Iterator;
+import java.util.List;
+
 
 @Service
 public class TravelServiceImp implements TravelService {
@@ -40,52 +45,125 @@ public class TravelServiceImp implements TravelService {
 
 
     @Override
-    public String createTravelApply(int requestId) {
+    public Message createTravelApply(int requestId) {
         String Suffix = "/api/open/travelApplication/create";
+
         TravelInfo travelInfo = getTravelInfo(requestId);
 
-        String initiated = initdata();
+        if (travelInfo == null){
+            LOGGER.info("流程发起人没有汇联易账号！");
+            return new Message("-1","failure","流程发起人没有汇联易账号！无法创建汇联易单据，请先申请汇联易账号后重新提交该单据。");
+        }
+
+        if (!travelInfo.isActivated() || travelInfo.getStatus().equals("1003")){
+            LOGGER.info("汇联易账号状态为离职状态或者未激活:"+travelInfo.getEmployeeID());
+            return new Message("-1","failure","流程发起人汇联易账号状态为离职状态或者未激活，无法创建汇联易单据，请先激活或者恢复汇联易账号后重新提交该单据。");
+        }
+
         ObjectMapper objectMapper = new ObjectMapper();
 
-        JsonNode rootNode;
-        String res;
+        JsonNode requestNode;
+
+        String res,businessCode;
 
         try {
-            rootNode = objectMapper.readTree(initiated);
-            ObjectNode employeeID = (ObjectNode) rootNode.get("applicant");
+            LOGGER.info("\n"+initiated());
+
+            //请求JSON信息
+            requestNode = objectMapper.readTree(initiated());
+
+            //自定义数据赋值
+
+            //头数据赋值
+            ObjectNode employeeID = (ObjectNode) requestNode.get("applicant");
             employeeID.put("employeeID",travelInfo.getEmployeeID());
-            ArrayNode customFormValuesArray = (ArrayNode) rootNode.get("custFormValues");
+
+            ObjectNode companyID = (ObjectNode) requestNode;
+            companyID.put("companyCode",travelInfo.getCompanyCode());
+
+
+            ArrayNode customFormValuesArray = (ArrayNode) requestNode.get("custFormValues");
             for (JsonNode node : customFormValuesArray) {
                 ObjectNode objectNode = (ObjectNode) node;
-                String messageKey = objectNode.get("messageKey").asText();
-                switch (messageKey) {
-                    case "select_company" -> objectNode.put("value", travelInfo.getCompanyOID());
-                    case "select_cost_center" -> objectNode.put("value", travelInfo.getDepartmentOID());
-                    case "cust_list" -> objectNode.put("value", travelInfo.getTravelType());
-                    case "start_date" -> objectNode.put("value", travelInfo.getStart_date());
-                    case "end_date" -> objectNode.put("value", travelInfo.getEnd_date());
-                    case "city" -> objectNode.put("value", travelInfo.getCity());
-                    case "select_participant" -> objectNode.put("value", travelInfo.getEmployeeID());
-                    case "input" -> objectNode.put("value", travelInfo.getParticipant());
-                    case "title" -> objectNode.put("value", travelInfo.getBusinessReason());
-                    case "number" -> objectNode.put("value", 0);
-                    case "select_user" -> objectNode.put("value", travelInfo.getWorkAgent());
-                    case "attachment" -> objectNode.put("value", String.valueOf(travelInfo.getAttachment()));
-                    default -> {
-                    }
+                String fieldCode = objectNode.get("fieldCode").asText();
+                switch (fieldCode) {
+                    case "company":
+                        objectNode.put("valueCode", travelInfo.getCompanyCode()); // 公司
+                        break;
+                    case "department":
+                        objectNode.put("value", travelInfo.getDepartmentID().split("_")[0]); // 部门
+                        break;
+                    case "travelType":
+                        objectNode.put("valueCode", travelInfo.getTravelType()); // 出差类型
+                        break;
+                    case "isOrderAirTicket":
+                        objectNode.put("valueCode", travelInfo.getIsOrderAirTicket()); // 是否预订机票
+                        break;
+                    case "start_date":
+                        objectNode.put("value", travelInfo.getStart_date().split(" ")[0]); // 出差开始时间
+                        break;
+                    case "end_date":
+                        objectNode.put("value", travelInfo.getEnd_date().split(" ")[0]); // 出差结束时间
+                        break;
+                    case "city":
+                        objectNode.put("value", travelInfo.getCity()); // 出差地点
+                        break;
+                    // case "select_participant":
+                    //     objectNode.put("value", travelInfo.getEmployeeID()); //
+                    //     break;
+                    case "participant":
+                        objectNode.put("value", travelInfo.getParticipant()); // 出差参与人
+                        break;
+                    case "businessReason":
+                        objectNode.put("value", travelInfo.getBusinessReason()); // 出差事由
+                        break;
+                    case "TravelFee":
+                        objectNode.put("value", travelInfo.getTravelFee()); // 出差费用
+                        break;
+                    case "WorkAgent":
+                        objectNode.put("valueCode", travelInfo.getWorkAgent());
+                        break;
+                    case "file":
+                        objectNode.put("value", String.valueOf(travelInfo.getAttachment()));
+                        break;
+                    // case "projectNo":
+                    //     objectNode.put("value", travelInfo.getProjectNo().split("_")[0]); // 120002
+                    //     break;
+                    case "projectNo":
+                        objectNode.put("value", 120002); // 测试环境只有三个项目 直接写死
+                        break;
+                    case "projectNoDesc":
+                        objectNode.put("value", travelInfo.getProjectNoDesc());
+                        break;
+                    default:
+                        break;
                 }
+
             }
 
-            LOGGER.info("这里是更新后的数据：\n" + customFormValuesArray);
+            LOGGER.info("这里是更新后的数据：\n" + requestNode);
 
-            res = https.Post(APP_ENVIRONMENT + Suffix, objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode));
+            //调用接口创建汇联易单据
+            res = https.Post(APP_ENVIRONMENT + Suffix, objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(requestNode));
 
             LOGGER.info(res);
+
+            JsonNode responseNode = objectMapper.readTree(res);
+
+            if (responseNode.get("businessCode").asText() == null){
+                return new Message("0","failure", responseNode.asText());
+            }
+            businessCode = responseNode.get("businessCode").asText();
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
 
-        return res;
+        //return res;
+        Message message = new Message("200","success", businessCode);
+
+        LOGGER.info(String.valueOf(message));
+
+        return message;
     }
 
     @Override
@@ -93,14 +171,31 @@ public class TravelServiceImp implements TravelService {
         //初始化获得OA表单信息
         TravelInfo travelInfo = travelMapper.getTravelInfo(requestId);
 
-        //调用汇联易人员接口 补全汇联易公司、部门、人员oid信息
+        //调用汇联易人员接口 补全汇联易公司、部门、人员oid、状态、账号是否已激活等信息
         LOGGER.info(String.valueOf(travelInfo));
-        String Suffix = "/api/open/user/detail/"+travelInfo.getEmployeeID();
-        UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromUriString(APP_ENVIRONMENT+Suffix);
+        String response = getHeliosPeopleInfo(travelInfo.getEmployeeID());
 
-        //发送请求获得数据
-        String response = https.Get("",uriComponentsBuilder);
+        //获取汇联易参与人
+        List<String> participantslist = travelMapper.getParticipants(requestId);
+        travelInfo.setParticipant(String.join(",",participantslist));
+
+        //获取汇联易工作代理人
+        List<String> workAgentlist = travelMapper.getWorkAgents(requestId);
+        for (Iterator<String> iterator = workAgentlist.iterator(); iterator.hasNext(); ) {
+            String s = iterator.next();
+            if (!isHasHeliosAccount(getHeliosPeopleInfo(s))) {
+                iterator.remove();  // 使用 Iterator 的 remove 方法来删除元素
+            }
+        }
+        travelInfo.setWorkAgent(String.join(",",workAgentlist));
+
+        if (!isHasHeliosAccount(response)){
+            LOGGER.info("员工不存在，该人员没有汇联易账号");
+            return null;
+        }
+
         //LOGGER.info(response);
+        //需要添加逻辑判断 是否正常获取了数据 如果没有 进行相应的处理
         JsonNode jsonNode;
 
         try {
@@ -109,122 +204,130 @@ public class TravelServiceImp implements TravelService {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        travelInfo.setCompanyOID(jsonNode.get("companyOID").asText());
-        travelInfo.setDepartmentOID(jsonNode.get("departmentOID").asText());
+
+        travelInfo.setStatus(jsonNode.get("status").asText());//获取账号属性 1001 在职 1003 离职（无法创建单据）
+        travelInfo.setActivated(jsonNode.get("activated").asBoolean());//获得账号是否已经激活
         travelInfo.setCompanyCode(jsonNode.get("companyCode").asInt());
-        travelInfo.setFormOID(travelInfo.getTravelType() == 0 ? "A：国内" : "B：国外");//根据差旅类型映射差旅申请单-国内/外
+        travelInfo.setTravelType(travelInfo.getTravelType().equals("0") ? "0" : "1");//根据差旅类型映射差旅申请单-国内/外
         LOGGER.info("补全后的travelInfo：\n"+ travelInfo);
         return travelInfo;
+    }
+    @Override
+    public String getHeliosPeopleInfo(String EmployeeID){
+
+        String Suffix = "/api/open/user/detail/"+EmployeeID;
+
+        UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromUriString(APP_ENVIRONMENT+Suffix);
+
+        //发送请求获得数据
+        return https.Get("",uriComponentsBuilder);
+
+    }
+    @Override
+    public boolean isHasHeliosAccount(String responseBody){
+        try {
+            ObjectMapper objectMapper =  new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(responseBody);
+            if (jsonNode.get("errorCode") == null){
+                LOGGER.info(responseBody);
+                return true;
+            }
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+        return false;
     }
 
     public String test(){
         LOGGER.info(travelMapper.getGH(6433730));
         return travelMapper.getGH(6433730);
     }
-    public String initdata(){
-        return """
-                {
-                    "applicant": {
-                        "employeeID": ""
-                    },
-                    "currencyCode": "CNY",
-                    "companyCode": "10",
-                    "custFormValues": [
-                        {
-                            "fieldOID": "4b13b9a8-f58b-4435-9441-e020f3948238",
-                            "messageKey": "select_company",
-                            "value": ""
-                        },
-                        {
-                            "messageKey": "select_cost_center",
-                            "fieldOID": "e815c050-57fc-4eea-b2d6-2b445a98059c",
-                            "fieldName": "部门",
-                            "value": "",
-                            "required": false
-                        },
-                        {
-                            "fieldName": "出差类型",
-                            "fieldType": "CUSTOM_ENUMERATION",
-                            "fieldOID": "13c7d60c-3af0-49ce-88be-0f41d811aa54",
-                            "messageKey": "cust_list",
-                            "value": ""
-                        },
-                        {
-                            "messageKey": "start_date",
-                            "fieldOID": "390f6601-4d28-46c3-a93a-e057faca1175",
-                            "name": "2024-07-08T16:00:00Z",
-                            "value": ""
-                        },
-                        {
-                            "fieldOID": "b98318d1-906b-49aa-9e86-2bca8f280808",
-                            "name": "2024-07-16T15:59:00Z",
-                            "value": "",
-                            "messageKey": "end_date"
-                        },
-                        {
-                            "fieldOID": "241ed88f-96fb-4209-8c29-fc9c8ba1459e",
-                            "fieldName": "出差城市",
-                            "name": "CHN044019000",
-                            "value": "",
-                            "messageKey": "city"
-                        },
-                        {
-                            "fieldOID": "4e51e534-75fa-48a9-b7b7-7313f4fa4154",
-                            "fieldName": "参与人员（系统控件）",
-                            "messageKey": "select_participant",
-                            "value": ""
-                        },
-                        {
-                            "fieldOID": "45c7335f-1922-4a69-ae10-d871e95d40d0",
-                            "fieldName": "参与人",
-                            "fieldType": "TEXT",
-                            "fieldTypeId": 101,
-                            "name": "毛云龙 张欢欢",
-                            "value": "",
-                            "messageKey": "input"
-                        },
-                        {
-                            "fieldOID": "687c8119-061a-4203-b4ab-5d0e35bf69a7",
-                            "fieldName": "出差事由",
-                            "messageKey": "title",
-                            "value": ""
-                        },
-                        {
-                            "fieldOID": "cb777a1a-fea0-4092-a88f-49320d0c3f05",
-                            "fieldName": "预定机票",
-                            "messageKey": "cust_list",
-                            "value": "1"
-                        },
-                        {
-                            "fieldOID": "eca7476b-6a28-47ab-b077-304577a5a0f1",
-                            "fieldName": "预支旅费",
-                            "value": "",
-                            "messageKey": "number"
-                        },
-                        {
-                            "fieldName": "工作代理人",
-                            "fieldOID": "dd1cc8e2-eb54-419e-84fb-cd26a2361c2e",
-                            "value": "",
-                            "messageKey": "select_user"
-                        },
-                        {
-                            "fieldName": "附件",
-                            "fieldOID": "fd587576-6cf5-4503-94a5-b1fe17b81b9c",
-                            "messageKey": "attachment",
-                            "value": "[{\\"attachmentOID\\":\\"71c5f586-cce5-4028-b654-9418fb653bfe\\"}]"
-                        },
-                        {
-                            "messageKey": "input",
-                            "fieldName": "项目号说明",
-                            "fieldOID": "ada4cc79-51af-47f2-a2af-f20dec5c89ad",
-                            "value": ""
-                        }
-                    ],
-                    "formOID": "f3eb46e7-b133-49ca-885f-31eac722b38c",
-                    "formType": 2001,
-                    "status": 1003,
-                    "travelApplication": {},
-                    "type": 1002
-                }""";
+
+    private String initiated() {
+        return "{\n" +
+                "    \"applicant\": {\n" +
+                "        \"employeeID\": \"\"\n" +
+                "    },\n" +
+                "    \"currencyCode\": \"CNY\",\n" +
+                "    \"companyCode\": \"\",\n" +
+                "    \"custFormValues\": [\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"company\",\n" +
+                "            \"messageKey\": \"select_company\",\n" +
+                "            \"valueCode\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"department\",\n" +
+                "            \"messageKey\": \"select_cost_center\",\n" +
+                "            \"value\": \"\",\n" +
+                "            \"required\": false\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"travelType\",\n" +
+                "            \"messageKey\": \"cust_list\",\n" +
+                "            \"valueCode\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"start_date\",\n" +
+                "            \"messageKey\": \"start_date\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"end_date\",\n" +
+                "            \"messageKey\": \"end_date\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"city\",\n" +
+                "            \"messageKey\": \"city\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"participant\",\n" +
+                "            \"messageKey\": \"input\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"businessReason\",\n" +
+                "            \"messageKey\": \"title\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"isOrderAirTicket\",\n" +
+                "            \"messageKey\": \"cust_list\",\n" +
+                "            \"valueCode\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"TravelFee\",\n" +
+                "            \"messageKey\": \"number\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"WorkAgent\",\n" +
+                "            \"messageKey\": \"select_user\",\n" +
+                "            \"valueCode\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"file\",\n" +
+                "            \"messageKey\": \"attachment\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"projectNoDesc\",\n" +
+                "            \"messageKey\": \"input\",\n" +
+                "            \"value\": \"\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"fieldCode\": \"projectNo\",\n" +
+                "            \"messageKey\": \"select_cost_center\",\n" +
+                "            \"value\": \"\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"formOID\": \"f3eb46e7-b133-49ca-885f-31eac722b38c\",\n" +
+                "    \"formType\": 2001,\n" +
+                "    \"status\": 1003,\n" +
+                "    \"travelApplication\": {},\n" +
+                "    \"type\": 1002\n" +
+                "}";
     }
 }
