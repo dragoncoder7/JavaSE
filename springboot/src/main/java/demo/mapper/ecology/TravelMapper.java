@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface TravelMapper {
-    @Select("SELECT gh , qsrq1 , jzrq1 , cclx , sy , ydjp , zwdlr , cccs , ccry , xmh, xmhsm , fybm , yzlf from formtable_main_17 where requestid = #{requestId}")
+    @Select("SELECT gh , qsrq1 , jzrq1 , cclx , sy , ydjp , zwdlr , cccs , ccry , xmh, xmhsm , fybm , yzlf ,qxzyscdwj from formtable_main_17 where requestid = #{requestId}")
     @Results({
             @Result(property = "employeeID", column = "gh"),
             @Result(property = "start_date", column = "qsrq1"),
@@ -23,7 +23,8 @@ public interface TravelMapper {
             @Result(property = "projectNo", column = "xmh"),
             @Result(property = "projectNoDesc", column = "xmhsm"),
             @Result(property = "departmentID", column = "fybm"),
-            @Result(property = "TravelFee", column = "yzlf")
+            @Result(property = "TravelFee", column = "yzlf"),
+            @Result(property = "attachmentID", column = "qxzyscdwj")
     })
     TravelInfo getTravelInfo(@Param("requestId") int requestId);
     @Select("select gh from formtable_main_17 where requestid = #{requestId}")

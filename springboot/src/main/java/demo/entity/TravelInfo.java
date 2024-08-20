@@ -1,7 +1,7 @@
 package demo.entity;
 
 import lombok.Data;
-import java.io.File;
+import java.util.List;
 
 
 @Data
@@ -33,8 +33,8 @@ public class TravelInfo {
     //参与人
     private String participant;
 
-    //附件
-    private File attachment = null;
+    //OA附件id
+    private String attachmentID;
 
     //项目号
     private String projectNo;
@@ -56,4 +56,9 @@ public class TravelInfo {
 
     //汇联易账号是否已激活
     private boolean isActivated;
+
+    //附件列表
+    private List<Attachment> attachments;
+
+    private String errorMessage = "";
 }

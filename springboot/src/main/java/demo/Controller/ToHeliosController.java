@@ -3,10 +3,12 @@ package demo.Controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import demo.Service.LeaveService;
 import demo.Service.TravelService;
 import demo.entity.LeaveInfo;
 import demo.entity.Message;
+import demo.entity.TravelInfo;
 import demo.mapper.ecology.TravelMapper;
 import demo.mapper.hr.LeaveMapper;
 import jakarta.annotation.Resource;
@@ -15,10 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -54,8 +53,14 @@ public class ToHeliosController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/test")
     @Transactional
-    public String test(){
-        return null;
+    public String test(@RequestParam int requestID){
+        TravelInfo travelInfo = travelService.getTravelInfo(requestID);
+        LOGGER.info(travelInfo.toString());
+        return travelInfo.toString();
+        //LOGGER.info(travelInfo.toString());
+
+
+
 
 //        List<LeaveInfo> leaveInfos = travelMapper.getLeaveInfo(9002116);//
 //

@@ -13,6 +13,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -115,8 +116,14 @@ public class Https {
         return responseEntity.getBody();
     }
 
+    /**
+     *
+     * @param url 上传地址
+     * @param file 文件
+     * @return 上传结果
+     */
     @RequestMapping(value = "/attachment")
-    public String PostAttachment(String url ,File file){
+    public String UploadFile(@RequestParam() String url , File file){
 
         // 配置请求头
         HttpHeaders httpHeaders = new HttpHeaders();
