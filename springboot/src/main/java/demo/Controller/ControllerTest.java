@@ -1,16 +1,24 @@
 package demo.Controller;
 
+import demo.Https.HTTP;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ControllerTest {
 
     @GetMapping(path = "/test1")
-    public String test(@RequestParam(value = "name", defaultValue = "World") String name){
-        System.out.println("test");
-        return "test content:"+name;
+    public String test(){
+        HTTP http = new HTTP();
+        for (int i = 0; i < 100; i++) {
+            http.Get("","https://api.lbbb.cc/api/zuanyulu");
+        }
+        String res = http.Get("","https://api.lbbb.cc/api/zuanyulu");
+        System.out.println(res);
+        return res;
     }
     public static void main(String[] args) {
-
+        for (int i = 0; i < 100; i++) {
+            System.out.println(new HTTP().Get("","https://api.lbbb.cc/api/zuanyulu"));
+        }
     }
 }

@@ -47,4 +47,16 @@ public interface TravelMapper {
             @Result(property = "OaWorkflowNo", column = "lcbh")
     })
     List<LeaveInfo> getLeaveInfo(@Param("requestId") int requestId);
+
+    @Select("select a.documentno from oa2hr2helios a where a.requestid = #{requestId}")
+    String isWrittenToHelios(@Param("requestId") int requestId);
+
+    @Select("select a.istohr from oa2hr2helios a where a.requestid = #{requestId}")
+    String isWrittenToHr(@Param("requestId") int requestId);
+
+    @Update("Update oa2hr2helios a set a.ISTOHR = 'success' where a.REQUESTID = #{requestId} ")
+    int updateHrStatus(@Param("requestId") int requestId);
+
+    @Update("Update oa2hr2helios a set a.DOCUMENTNO = #{businessCode} where a.REQUESTID = #{requestId} ")
+    int updateHeliosStatus(@Param("businessCode") String businessCode,@Param("requestId") int requestId);
 }

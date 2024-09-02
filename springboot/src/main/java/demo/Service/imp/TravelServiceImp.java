@@ -92,10 +92,14 @@ public class TravelServiceImp implements TravelService {
             ArrayNode fileOidList = objectMapper.createArrayNode();
 
             // 添加多个 JSON 对象到数组中
-            for (Attachment attachment:
-                 travelInfo.getAttachments()) {
-                fileOidList.add(createAttachmentNode(attachment.getAttachmentOID()));
+            // 判断是否有附件
+            if (!(travelInfo.getAttachments() == null || travelInfo.getAttachments().isEmpty())){
+                for (Attachment attachment:
+                        travelInfo.getAttachments()) {
+                    fileOidList.add(createAttachmentNode(attachment.getAttachmentOID()));
+                }
             }
+
 
             ArrayNode customFormValuesArray = (ArrayNode) requestNode.get("custFormValues");
             for (JsonNode node : customFormValuesArray) {
@@ -173,6 +177,12 @@ public class TravelServiceImp implements TravelService {
             throw new RuntimeException(e);
         }
 
+        if (!businessCode.isEmpty()){
+
+            String result = travelMapper.updateHeliosStatus(businessCode,requestId) == 1 ? "success" : "failure";
+
+            LOGGER.info("差旅申请单更新结果:"+requestId+" "+businessCode+" "+result);
+        }
         //return res;
         Message message = new Message("200","success", businessCode);
 
@@ -218,21 +228,21 @@ public class TravelServiceImp implements TravelService {
         }
         travelInfo.setWorkAgent(String.join(",",workAgentlist));
 
-        //获取附件oid
-        List<Attachment> attachmentList = new ArrayList<>();
-        String[] fileList = travelInfo.getAttachmentID().split(",");
-        for (String fileID:
-             fileList) {
-            Attachment attachment = attachMapper.getAttachmentsID(fileID);
-            if (!uploadFile(attachment)){
-                travelInfo.setErrorMessage("上传附件异常！详情查看OA日志oa-cost模块");
-                return travelInfo;
+        //获取附件oid 若无附件不需要上传
+        if (!(travelInfo.getAttachmentID() == null || travelInfo.getAttachmentID().isEmpty())){
+            List<Attachment> attachmentList = new ArrayList<>();
+            String[] fileList = travelInfo.getAttachmentID().split(",");
+            for (String fileID:
+                    fileList) {
+                Attachment attachment = attachMapper.getAttachmentsID(fileID);
+                if (!uploadFile(attachment)){
+                    travelInfo.setErrorMessage("上传附件异常！详情查看OA日志oa-cost模块");
+                    return travelInfo;
+                }
+                attachmentList.add(attachment);
             }
-
-            attachmentList.add(attachment);
+            travelInfo.setAttachments(attachmentList);
         }
-
-        travelInfo.setAttachments(attachmentList);
 
 
 

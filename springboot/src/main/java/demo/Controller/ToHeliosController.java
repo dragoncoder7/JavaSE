@@ -3,7 +3,6 @@ package demo.Controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import demo.Service.LeaveService;
 import demo.Service.TravelService;
 import demo.entity.LeaveInfo;
@@ -136,6 +135,11 @@ public class ToHeliosController {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        String businessCode = travelMapper.isWrittenToHelios(requestId);
+        if (businessCode != null && !businessCode.isEmpty()){
+            LOGGER.info("该OA单已成功创建过汇联易单据！"+businessCode);
+            return new Message("200","Succeed","该OA单已成功创建过汇联易单据！"+businessCode);
+        }
 
         Message res = travelService.createTravelApply(requestId);
 
@@ -143,12 +147,10 @@ public class ToHeliosController {
 
         return res;
 
-        //先写思路  先判断工号是不是跟HR的一致 一致了 先推hr
-        // 再判断有没有推到过汇联易 把单号回显给oa 如果没有 就调用这个程序 去
     }
     @RequestMapping(value = "/pushHr", method = RequestMethod.POST, consumes = "application/json",produces = "application/json; charset=UTF-8")
     @Transactional
-    public Message pushHrInfo(@RequestBody String body){
+    public synchronized Message pushHrInfo(@RequestBody String body){
         String message = null;
         ObjectMapper objectMapper = new ObjectMapper();
         int requestId ;
@@ -158,9 +160,16 @@ public class ToHeliosController {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        String isWrittenToHr = travelMapper.isWrittenToHr(requestId);
+
+        if (isWrittenToHr != null && isWrittenToHr.equals("success")){
+            return new Message("200","Succeed", "已成功推送过HR数据，无需重复处理");
+        }
+
         List<LeaveInfo> leaveInfos = travelMapper.getLeaveInfo(requestId);
 
         int successCount = 0;
+
         try {
             for (LeaveInfo people : leaveInfos) {
 
@@ -189,6 +198,11 @@ public class ToHeliosController {
             LOGGER.info("有数据推送失败，回滚本次所有的推HR的操作");
             return new Message("-1","failure","HR推送失败，全部回滚，具体失败原因："+message);
         }
+
+        String result = travelMapper.updateHrStatus(requestId) == 1 ? "success" : "failure";
+
+        LOGGER.info("更新HR推送结果:"+requestId+" "+result);
+
         return new Message("200","success", String.valueOf(successCount));
     }
 }
