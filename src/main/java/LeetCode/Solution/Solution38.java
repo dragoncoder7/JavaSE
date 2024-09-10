@@ -30,7 +30,7 @@ public class Solution38 {
 //    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 //
 //    }
-    public class ListNode {
+    public static class ListNode {
           int val;
           ListNode next;
           ListNode() {}

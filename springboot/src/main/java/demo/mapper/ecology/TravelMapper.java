@@ -27,8 +27,6 @@ public interface TravelMapper {
             @Result(property = "attachmentID", column = "qxzyscdwj")
     })
     TravelInfo getTravelInfo(@Param("requestId") int requestId);
-    @Select("select gh from formtable_main_17 where requestid = #{requestId}")
-    String getGH(@Param("requestId") int requestId);
 
     @Select("select b.ccrxm from formtable_main_17 a , formtable_main_17_dt2 b where a.id = b.mainid and a.requestid = #{requestId}")
     List<String> getParticipants(@Param("requestId") int requestId);

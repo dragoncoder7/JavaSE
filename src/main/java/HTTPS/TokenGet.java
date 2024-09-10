@@ -91,6 +91,8 @@ public class TokenGet {
         Map<String,Object> datas = JSONUtil.parseObj(data);
         //ECOLOGY返回的token
         // TODO 为Token缓存设置过期时间
+        // FIXME
+        //
         SYSTEM_CACHE.put("SERVER_TOKEN",StrUtil.nullToEmpty((String)datas.get("token")));
         return datas;
     }
@@ -130,3 +132,7 @@ public class TokenGet {
     }
 
 }
+
+
+
+

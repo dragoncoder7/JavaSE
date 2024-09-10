@@ -17,12 +17,14 @@ public class updateJobTitle {
         connection.setAutoCommit(false);
         //6731622 formtable_main_3297
         Statement statement = connection.createStatement();
-        ResultSet rs = statement.executeQuery("select * from formtable_main_3297 a where a.requestid = 6731622");
+        ResultSet rs = statement.executeQuery("select * from formtable_main_3297 a where a.requestid = 9999999");
 
         //ResultSet rs = statement.executeQuery("select qjsjq,qjsjz,qjsc1 from formtable_main_3106 a order by a.requestid desc");
-
+        int requestid = 0;
         int count = 0;
         while (rs.next()){
+            requestid = rs.getInt("requestid");
+            System.out.println(requestid);
             String sl = rs.getString("sl");
             if (sl == null){
                 sl = "123";

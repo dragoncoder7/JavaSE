@@ -23,7 +23,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 
@@ -106,56 +105,30 @@ public class TravelServiceImp implements TravelService {
                 ObjectNode objectNode = (ObjectNode) node;
                 String fieldCode = objectNode.get("fieldCode").asText();
                 switch (fieldCode) {
-                    case "company":
-                        objectNode.put("valueCode", travelInfo.getCompanyCode()); // 公司
-                        break;
-                    case "department":
-                        objectNode.put("value", travelInfo.getDepartmentID().split("_")[0]); // 部门
-                        break;
-                    case "travelType":
-                        objectNode.put("valueCode", travelInfo.getTravelType()); // 出差类型
-                        break;
-                    case "isOrderAirTicket":
-                        objectNode.put("valueCode", travelInfo.getIsOrderAirTicket()); // 是否预订机票
-                        break;
-                    case "start_date":
-                        objectNode.put("value", travelInfo.getStart_date().split(" ")[0]); // 出差开始时间
-                        break;
-                    case "end_date":
-                        objectNode.put("value", travelInfo.getEnd_date().split(" ")[0]); // 出差结束时间
-                        break;
-                    case "city":
-                        objectNode.put("value", travelInfo.getCity()); // 出差地点
-                        break;
+                    case "company" -> objectNode.put("valueCode", travelInfo.getCompanyCode()); // 公司
+                    case "department" -> objectNode.put("value", travelInfo.getDepartmentID().split("_")[0]); // 部门
+                    case "travelType" -> objectNode.put("valueCode", travelInfo.getTravelType()); // 出差类型
+                    case "isOrderAirTicket" -> objectNode.put("valueCode", travelInfo.getIsOrderAirTicket()); // 是否预订机票
+                    case "start_date" -> objectNode.put("value", travelInfo.getStart_date().split(" ")[0]); // 出差开始时间
+                    case "end_date" -> objectNode.put("value", travelInfo.getEnd_date().split(" ")[0]); // 出差结束时间
+                    case "city" -> objectNode.put("value", travelInfo.getCity()); // 出差地点
+
                     // case "select_participant":
                     //     objectNode.put("value", travelInfo.getEmployeeID()); //
                     //     break;
-                    case "participant":
-                        objectNode.put("value", travelInfo.getParticipant()); // 出差参与人
-                        break;
-                    case "businessReason":
-                        objectNode.put("value", travelInfo.getBusinessReason()); // 出差事由
-                        break;
-                    case "TravelFee":
-                        objectNode.put("value", travelInfo.getTravelFee()); // 出差费用
-                        break;
-                    case "WorkAgent":
-                        objectNode.put("valueCode", travelInfo.getWorkAgent());
-                        break;
-                    case "file":
-                        objectNode.put("value", ""+fileOidList);;
-                        break;
+                    case "participant" -> objectNode.put("value", travelInfo.getParticipant()); // 出差参与人
+                    case "businessReason" -> objectNode.put("value", travelInfo.getBusinessReason()); // 出差事由
+                    case "TravelFee" -> objectNode.put("value", travelInfo.getTravelFee()); // 出差费用
+                    case "WorkAgent" -> objectNode.put("valueCode", travelInfo.getWorkAgent());
+                    case "file" -> objectNode.put("value", "" + fileOidList);
+
                     // case "projectNo":
                     //     objectNode.put("value", travelInfo.getProjectNo().split("_")[0]); // 120002
                     //     break;
-                    case "projectNo":
-                        objectNode.put("value", 120002); // 测试环境只有三个项目 直接写死
-                        break;
-                    case "projectNoDesc":
-                        objectNode.put("value", travelInfo.getProjectNoDesc());
-                        break;
-                    default:
-                        break;
+                    case "projectNo" -> objectNode.put("value", 120002); // 测试环境只有三个项目 直接写死
+                    case "projectNoDesc" -> objectNode.put("value", travelInfo.getProjectNoDesc());
+                    default -> {
+                    }
                 }
 
             }
@@ -202,6 +175,8 @@ public class TravelServiceImp implements TravelService {
     public TravelInfo getTravelInfo(int requestId) {
         //初始化获得OA表单信息
         TravelInfo travelInfo = travelMapper.getTravelInfo(requestId);
+        System.out.println();
+
 
         //调用汇联易人员接口 补全汇联易公司、部门、人员oid、状态、账号是否已激活等信息
         LOGGER.info(String.valueOf(travelInfo));
@@ -220,12 +195,9 @@ public class TravelServiceImp implements TravelService {
 
         //获取汇联易工作代理人 数据有问题 没取到
         List<String> workAgentlist = travelMapper.getWorkAgents(requestId);
-        for (Iterator<String> iterator = workAgentlist.iterator(); iterator.hasNext(); ) {
-            String s = iterator.next();
-            if (!isHasHeliosAccount(getHeliosPeopleInfo(s))) {
-                iterator.remove();  // 使用 Iterator 的 remove 方法来删除元素
-            }
-        }
+        // 使用 Iterator 的 remove 方法来删除元素
+        workAgentlist.removeIf(s -> !isHasHeliosAccount(getHeliosPeopleInfo(s)));
+
         travelInfo.setWorkAgent(String.join(",",workAgentlist));
 
         //获取附件oid 若无附件不需要上传
@@ -367,90 +339,91 @@ public class TravelServiceImp implements TravelService {
     }
 
     private String initiated() {
-        return "{\n" +
-                "    \"applicant\": {\n" +
-                "        \"employeeID\": \"\"\n" +
-                "    },\n" +
-                "    \"currencyCode\": \"CNY\",\n" +
-                "    \"companyCode\": \"\",\n" +
-                "    \"custFormValues\": [\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"company\",\n" +
-                "            \"messageKey\": \"select_company\",\n" +
-                "            \"valueCode\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"department\",\n" +
-                "            \"messageKey\": \"select_cost_center\",\n" +
-                "            \"value\": \"\",\n" +
-                "            \"required\": false\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"travelType\",\n" +
-                "            \"messageKey\": \"cust_list\",\n" +
-                "            \"valueCode\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"start_date\",\n" +
-                "            \"messageKey\": \"start_date\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"end_date\",\n" +
-                "            \"messageKey\": \"end_date\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"city\",\n" +
-                "            \"messageKey\": \"city\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"participant\",\n" +
-                "            \"messageKey\": \"input\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"businessReason\",\n" +
-                "            \"messageKey\": \"title\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"isOrderAirTicket\",\n" +
-                "            \"messageKey\": \"cust_list\",\n" +
-                "            \"valueCode\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"TravelFee\",\n" +
-                "            \"messageKey\": \"number\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"WorkAgent\",\n" +
-                "            \"messageKey\": \"select_user\",\n" +
-                "            \"valueCode\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"file\",\n" +
-                "            \"messageKey\": \"attachment\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"projectNoDesc\",\n" +
-                "            \"messageKey\": \"input\",\n" +
-                "            \"value\": \"\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"fieldCode\": \"projectNo\",\n" +
-                "            \"messageKey\": \"select_cost_center\",\n" +
-                "            \"value\": \"\"\n" +
-                "        }\n" +
-                "    ],\n" +
-                "    \"formCode\": \"T_REQUEST_9446\",\n" +
-                "    \"formType\": 2001,\n" +
-                "    \"status\": 1003,\n" +
-                "    \"travelApplication\": {},\n" +
-                "    \"type\": 1002\n" +
-                "}";
+        return """
+                {
+                    "applicant": {
+                        "employeeID": ""
+                    },
+                    "currencyCode": "CNY",
+                    "companyCode": "",
+                    "custFormValues": [
+                        {
+                            "fieldCode": "company",
+                            "messageKey": "select_company",
+                            "valueCode": ""
+                        },
+                        {
+                            "fieldCode": "department",
+                            "messageKey": "select_cost_center",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "fieldCode": "travelType",
+                            "messageKey": "cust_list",
+                            "valueCode": ""
+                        },
+                        {
+                            "fieldCode": "start_date",
+                            "messageKey": "start_date",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "end_date",
+                            "messageKey": "end_date",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "city",
+                            "messageKey": "city",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "participant",
+                            "messageKey": "input",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "businessReason",
+                            "messageKey": "title",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "isOrderAirTicket",
+                            "messageKey": "cust_list",
+                            "valueCode": ""
+                        },
+                        {
+                            "fieldCode": "TravelFee",
+                            "messageKey": "number",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "WorkAgent",
+                            "messageKey": "select_user",
+                            "valueCode": ""
+                        },
+                        {
+                            "fieldCode": "file",
+                            "messageKey": "attachment",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "projectNoDesc",
+                            "messageKey": "input",
+                            "value": ""
+                        },
+                        {
+                            "fieldCode": "projectNo",
+                            "messageKey": "select_cost_center",
+                            "value": ""
+                        }
+                    ],
+                    "formCode": "T_REQUEST_9446",
+                    "formType": 2001,
+                    "status": 1003,
+                    "travelApplication": {},
+                    "type": 1002
+                }""";
     }
 }
