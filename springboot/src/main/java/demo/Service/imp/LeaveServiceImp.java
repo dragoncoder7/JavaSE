@@ -85,6 +85,14 @@ public class LeaveServiceImp implements LeaveService {
                 parameters
         );
 
+        for (Map.Entry<String, Object> entry : result.entrySet()) {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+            LOGGER.info("Key: " + key + ", Value: " + value);
+        }
+        if (result.get("status") == null){
+            return -1;
+        }
         // 获取并返回输出参数的值
         return (int) result.get("status"); // 获取存储过程执行后的输出参数
     }

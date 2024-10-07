@@ -43,13 +43,6 @@ public class ToHeliosController {
         this.leaveService = leaveService;
     }
 
-
-    public static void main(String[] args) {
-//        TravelInfo travelBean = TravelInfo.builder()
-//                .travelType("")
-//                .build();
-    }
-
     @RequestMapping(method = RequestMethod.GET, value = "/test")
     @Transactional
     public String test(@RequestParam int requestID){
@@ -151,6 +144,7 @@ public class ToHeliosController {
     @RequestMapping(value = "/pushHr", method = RequestMethod.POST, consumes = "application/json",produces = "application/json; charset=UTF-8")
     @Transactional
     public synchronized Message pushHrInfo(@RequestBody String body){
+        LOGGER.info("请求信息："+body);
         String message = null;
         ObjectMapper objectMapper = new ObjectMapper();
         int requestId ;
@@ -177,7 +171,27 @@ public class ToHeliosController {
 
                 int res = leaveService.push(people);
 
-                message = "汇联易出差单 出差人"+people.getName()+"出差推送HR结果:"+(res == 1 ? "success" : "failure");
+                String errorMessage ;
+
+                switch (res) {
+                    case  1 : {
+                        errorMessage = "success";
+                        break;
+                    }
+                    case  0 : {
+                        errorMessage = "failure! 参考OA首页HR相关文档";
+                        break;
+                    }
+                    case  -1: {
+                        errorMessage = "failure! 导入的数据包含已存档的月份，不允许导入。";
+                        break;
+                    }
+                    default: {
+                        errorMessage = "其他失败原因！联系IT查看日志。";
+                    }
+                }
+
+                message = "汇联易出差单 出差人"+people.getName()+"出差推送HR结果:"+errorMessage;
 
                 LOGGER.info(message);
 
@@ -186,6 +200,8 @@ public class ToHeliosController {
                 }
             }
         }catch (Exception e){
+            e.printStackTrace();
+            LOGGER.info(e.getMessage());
             TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
             LOGGER.info("产生异常，回滚本次所有的推HR的操作！"+e);
             return new Message("-1","failure","异常bug，回滚本次所有的推HR的操作！"+e);

@@ -22,7 +22,8 @@ import java.io.File;
 import java.net.URI;
 import java.time.Duration;
 @Component
-@RestController(value = "/http")
+@RestController
+@RequestMapping(value = "/http")
 public class Https {
     public static final Logger LOGGER = LoggerFactory.getLogger(Https.class);
 

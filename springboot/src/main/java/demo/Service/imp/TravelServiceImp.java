@@ -88,6 +88,8 @@ public class TravelServiceImp implements TravelService {
             ObjectNode companyID = (ObjectNode) requestNode;
             companyID.put("companyCode",travelInfo.getCompanyCode());
 
+            companyID.put("formCode",travelInfo.getTravelType().equals("0") ? "Travel_China" : "Travel_World");
+
             ArrayNode fileOidList = objectMapper.createArrayNode();
 
             // 添加多个 JSON 对象到数组中
@@ -112,19 +114,11 @@ public class TravelServiceImp implements TravelService {
                     case "start_date" -> objectNode.put("value", travelInfo.getStart_date().split(" ")[0]); // 出差开始时间
                     case "end_date" -> objectNode.put("value", travelInfo.getEnd_date().split(" ")[0]); // 出差结束时间
                     case "city" -> objectNode.put("value", travelInfo.getCity()); // 出差地点
-
-                    // case "select_participant":
-                    //     objectNode.put("value", travelInfo.getEmployeeID()); //
-                    //     break;
                     case "participant" -> objectNode.put("value", travelInfo.getParticipant()); // 出差参与人
                     case "businessReason" -> objectNode.put("value", travelInfo.getBusinessReason()); // 出差事由
                     case "TravelFee" -> objectNode.put("value", travelInfo.getTravelFee()); // 出差费用
                     case "WorkAgent" -> objectNode.put("valueCode", travelInfo.getWorkAgent());
                     case "file" -> objectNode.put("value", "" + fileOidList);
-
-                    // case "projectNo":
-                    //     objectNode.put("value", travelInfo.getProjectNo().split("_")[0]); // 120002
-                    //     break;
                     case "projectNo" -> objectNode.put("value", 120002); // 测试环境只有三个项目 直接写死
                     case "projectNoDesc" -> objectNode.put("value", travelInfo.getProjectNoDesc());
                     default -> {
@@ -183,7 +177,7 @@ public class TravelServiceImp implements TravelService {
         String response = getHeliosPeopleInfo(travelInfo.getEmployeeID());
 
         //判断是否有账号
-        if (!isHasHeliosAccount(response)){
+        if (isHasHeliosAccount(response)){
             travelInfo.setErrorMessage("流程发起人没有汇联易账号！无法创建汇联易单据，请先申请汇联易账号后重新提交该单据。");
             LOGGER.info("员工不存在，该人员工号没有汇联易账号:"+travelInfo.getEmployeeID());
             return travelInfo;
@@ -196,7 +190,7 @@ public class TravelServiceImp implements TravelService {
         //获取汇联易工作代理人 数据有问题 没取到
         List<String> workAgentlist = travelMapper.getWorkAgents(requestId);
         // 使用 Iterator 的 remove 方法来删除元素
-        workAgentlist.removeIf(s -> !isHasHeliosAccount(getHeliosPeopleInfo(s)));
+        workAgentlist.removeIf(s -> isHasHeliosAccount(getHeliosPeopleInfo(s)));
 
         travelInfo.setWorkAgent(String.join(",",workAgentlist));
 
@@ -251,7 +245,7 @@ public class TravelServiceImp implements TravelService {
         try {
             ObjectMapper objectMapper =  new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(responseBody);
-            if (jsonNode.get("errorCode") == null){
+            if (jsonNode.get("errorCode") != null){
                 LOGGER.info(responseBody);
                 return true;
             }
@@ -419,7 +413,7 @@ public class TravelServiceImp implements TravelService {
                             "value": ""
                         }
                     ],
-                    "formCode": "T_REQUEST_9446",
+                    "formCode": "",
                     "formType": 2001,
                     "status": 1003,
                     "travelApplication": {},
