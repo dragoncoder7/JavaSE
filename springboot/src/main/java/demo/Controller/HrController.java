@@ -38,7 +38,7 @@ public class HrController {
         LOGGER.info(map.toString());
         int requestId = Integer.parseInt(map.get("requestId").toString());
         int workflowId = Integer.parseInt(map.get("workflowId").toString());
-        /**
+        /*
          * map要给的数据 workflowid requestid
          */
         return hrService.syncLeave(requestId,workflowId);
@@ -85,10 +85,9 @@ public class HrController {
 
         requestMap.put("requestId", "9002350");
 
-        Map response = restTemplate.postForObject(url, requestMap, Map.class);
+        Map<String,Object> response = restTemplate.postForObject(url, requestMap, Map.class);
 
         LOGGER.info(response.toString());
     }
-
 
 }

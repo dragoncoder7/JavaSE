@@ -116,8 +116,8 @@ public class HrServiceImp implements HrService {
 
     /**
      * 计算请假时长 以及判断是否重复请假
-     * @param jsonNode
-     * @return
+     * @param jsonNode 请假信息
+     * @return  map结果集
      */
     private Map<String,Object> calculate(JsonNode jsonNode){
         Map<String,Object> map = new HashMap<>();
