@@ -1,16 +1,40 @@
-import LeetCode.Solution.Solution41;
-import LeetCode.Tree.TreeNode;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import lombok.val;
-import org.apache.cxf.message.Attachment;
-
 import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Objects;
 
 public class Main {
+
+    public static long getTimeMillis(String datetime) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        long timestamp = 0;
+        try {
+            Date date = formatter.parse(datetime);
+            timestamp = date.getTime();
+            System.out.println("Timestamp: " + timestamp);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return timestamp;
+    }
     public static void main(String[] args) {
+        System.out.println("2024-10".replace("-",""));
+
+        if (getTimeMillis("2024-09-14 08:53") < getTimeMillis("2024-10-01 00:00")){
+            System.out.println("成功");
+        }
+        System.out.println(System.currentTimeMillis());
+        System.out.println("select id, billid, fieldname, viewtype, detailtable, b.comments" +
+                "  from workflow_billfield a, user_col_comments b" +
+                " where a.billid = #{billid}" +
+                "   and a.viewtype = #{viewtype}" +
+                "   and a.fieldname = lower(b.column_name)" +
+                "   and b.table_name =upper(#{tablename})");
 
         System.out.println(addStrings("56","77"));
         String startTime = "2024-04-03 08:00",endTime = "2024-04-07 17:30";
@@ -28,33 +52,28 @@ public class Main {
                 "\t\tOR ( a.k2007 > CONVERT ( VARCHAR, '"+startTime.split(" ")[0]+"', 120 ) AND a.k2007 < CONVERT ( VARCHAR, '"+endTime.split(" ")[0]+"', 120 ) ) \n" +
                 "\t)";
 
-        String sadfa = "select a.requestid,e.lastname,b.syzxm,b.syrgh,b.sybm,f.jobtitlename,d.departmentname,b.sscq,b.lxfs,b.qxlx,b.bz,a.sqrxm,a.sqrgh,a.sqbm,a.lcbh\n" +
-                "from formtable_main_1661 a right join formtable_main_1661_dt1 b on a.id = b.mainid\n" +
-                "left join workflow_requestbase c on a.requestid = c.requestid\n" +
-                "left join hrmdepartment d on b.sybm = d.id\n" +
-                "left join hrmresource e on b.syzxm = e.id\n" +
-                "left join hrmjobtitles f on b.zw = f.id\n" +
-                "where b.syzxm is not null and c.Currentnodetype = 3";
+        String sadfa = """
+                select a.requestid,e.lastname,b.syzxm,b.syrgh,b.sybm,f.jobtitlename,d.departmentname,b.sscq,b.lxfs,b.qxlx,b.bz,a.sqrxm,a.sqrgh,a.sqbm,a.lcbh
+                from formtable_main_1661 a right join formtable_main_1661_dt1 b on a.id = b.mainid
+                left join workflow_requestbase c on a.requestid = c.requestid
+                left join hrmdepartment d on b.sybm = d.id
+                left join hrmresource e on b.syzxm = e.id
+                left join hrmjobtitles f on b.zw = f.id
+                where b.syzxm is not null and c.Currentnodetype = 3""";
         System.out.println(sadfa);
         System.out.println("sql22: "+sql22);
         
-        String sql = "select a.requestid,a.sqr,b.sfrxm vName,b.zjlx vCertKindName,b.zjhm vCertNo,b.sjhm vPhone,b.sfdw vCompany,b.cph vLicensePlate,b.bzsm vMenu,a.dfsj vStartTime,a.lksj vEndTime,\n" +
-                "a.bfsy1 vReason,a.jdry vEmpName,a.sjhm vEmpPhone,a.lfrs vVisitorNum,a.itwp,a.itwpsm,a.wjp,a.wjpsm,a.sbgjsm,a.sqbm vEmpDepartment,a.hdfw quyu,a.jtwz,a.sjcq area\n" +
-                "from formtable_main_1531 a right join formtable_main_1531_dt1 b on a.id = b.mainid \n" +
-                "left join workflow_requestbase c on a.requestid = c.requestid\n" +
-                "where c.Currentnodetype = 3 and trunc(to_date(c.lastoperatedate,'yyyy-MM-dd'))=trunc(sysdate)";
+        String sql = """
+                select a.requestid,a.sqr,b.sfrxm vName,b.zjlx vCertKindName,b.zjhm vCertNo,b.sjhm vPhone,b.sfdw vCompany,b.cph vLicensePlate,b.bzsm vMenu,a.dfsj vStartTime,a.lksj vEndTime,
+                a.bfsy1 vReason,a.jdry vEmpName,a.sjhm vEmpPhone,a.lfrs vVisitorNum,a.itwp,a.itwpsm,a.wjp,a.wjpsm,a.sbgjsm,a.sqbm vEmpDepartment,a.hdfw quyu,a.jtwz,a.sjcq area
+                from formtable_main_1531 a right join formtable_main_1531_dt1 b on a.id = b.mainid\s
+                left join workflow_requestbase c on a.requestid = c.requestid
+                where c.Currentnodetype = 3 and trunc(to_date(c.lastoperatedate,'yyyy-MM-dd'))=trunc(sysdate)""";
 
-        String sql1 = "select a.requestid,e.lastname,b.syzxm,b.syrgh,b.sybm,f.jobtitlename,d.departmentname,b.sscq,b.lxfs,b.qxlx,b.bz,a.sqrxm,a.sqrgh,a.sqbm,a.lcbh\n" +
-                "from formtable_main_1661 a right join formtable_main_1661_dt1 b on a.id = b.mainid\n" +
-                "left join workflow_requestbase c on a.requestid = c.requestid\n" +
-                "left join hrmdepartment d on b.sybm = d.id\n" +
-                "left join hrmresource e on b.syzxm = e.id\n" +
-                "left join hrmjobtitles f on b.zw = f.id\n" +
-                "where b.syzxm is not null and c.Currentnodetype = 3";
         System.out.println(Arrays.toString(sql.getBytes(StandardCharsets.UTF_8)));
-        System.out.println(sql.codePointAt(1));;//获取下标为i的字符的Unicode码
+        System.out.println(sql.codePointAt(1));//获取下标为i的字符的Unicode码
         System.out.println(sql.chars());
-        System.out.println(sql.isBlank());;
+        System.out.println(sql.isBlank());
         System.out.println(sql.getClass());
         System.out.println(sql.endsWith("trunc(sysdate)"));//判断一个string是否是以你输入的串结尾
         char[] s = new char[]{1,2,3,4,55,66,88,10,5,9,10,22,78,16};
@@ -62,7 +81,7 @@ public class Main {
         System.out.println(Arrays.toString(s) +" \n "+ sql);
         System.out.println(sql.replace('a','b'));
         System.out.println(startTime.repeat(2));
-        System.out.println(sql.replaceAll(" ","999"));;
+        System.out.println(sql.replaceAll(" ","999"));
         System.out.println(sql.compareTo(" "));
 
         System.out.println(String.copyValueOf(new char[]{'a','b',' ','c'}));
@@ -71,15 +90,22 @@ public class Main {
         System.out.println(Integer.compare(5,5));
         System.out.println(Integer.compare(5,3));
         System.out.println("{\"requestId\": " + 9002274 + "}");
-        Date a = new Date();
 
+        System.out.println("#result-set-1");
+        JsonNode a = null;
+        try {
+            if (Objects.equals(a.get("a").asText(), "1")){
+                System.out.println("a");
+            }
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
     }
     public static String addStrings(String num1, String num2) {
-        int add = 0;
+        int add;
         int length = Math.max(num1.length(),num2.length());
         int[] ints = new int[length];
         for (int i = length - 1; i >= 0; i--) {
-            add = 0;
             int res = 0;
 //            int a = Integer.parseInt();
 //            int b = Integer.parseInt();
@@ -87,7 +113,6 @@ public class Main {
 //                add = 1;
 //                res = a + b - 10;
 //            }
-            res = res + add;
             ints[i] = res;
         }
         return Arrays.toString(ints);
@@ -113,7 +138,7 @@ public class Main {
                             "messageKey": "select_company",
                             "valueCode": ""
                         },
-                        {  
+                        { \s
                             "fieldCode": "department",
                             "messageKey": "select_cost_center",
                             "value": "",

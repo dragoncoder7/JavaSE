@@ -21,7 +21,7 @@ public class TreeNode {
         this.left = left;
     }
     public List<Integer> preorderTraversal0(TreeNode root) {
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<>();
         preorder(root, res);
         return res;
     }
@@ -125,12 +125,12 @@ public class TreeNode {
     }
 
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<>();
         if (root == null) {
             return res;
         }
 
-        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+        Deque<TreeNode> stack = new LinkedList<>();
         TreeNode prev = null;
         while (root != null || !stack.isEmpty()) {
             while (root != null) {

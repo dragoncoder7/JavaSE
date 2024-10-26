@@ -85,7 +85,7 @@ public class TokenGet {
         String data = HttpRequest.post(address+ "/api/ec/dev/auth/applytoken")
                 .header("appid",APPID)
                 .header("secret",encryptSecret)
-                .header("time","3600")
+                .header("time","86400")
                 .execute().body();
         System.out.println("testGetoken()："+data);
         Map<String,Object> datas = JSONUtil.parseObj(data);
@@ -117,7 +117,7 @@ public class TokenGet {
         //封装请求头参数
         RSA rsa = new RSA(null,spk);
         //对用户信息进行加密传输,暂仅支持传输OA用户ID
-        String encryptUserid = rsa.encryptBase64("1",CharsetUtil.CHARSET_UTF_8,KeyType.PublicKey);
+        String encryptUserid = rsa.encryptBase64("231129",CharsetUtil.CHARSET_UTF_8,KeyType.PublicKey);
         //调用ECOLOGY系统接口，注意此处的disableCookie，可翻阅hutool的文档查看
         String data = null;
         /*String data = HttpRequest.disableCookie()
