@@ -2,6 +2,9 @@ package demo.entity;
 
 import lombok.Data;
 
+/**
+ * 出差申请单实体
+ */
 @Data
 public class LeaveInfo {
 
