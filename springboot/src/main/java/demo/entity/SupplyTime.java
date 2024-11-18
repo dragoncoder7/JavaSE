@@ -7,6 +7,8 @@ import lombok.Data;
  */
 @Data
 public class SupplyTime {
+    private int id;
+
     private String username;
 
     private String employeeID;
@@ -14,4 +16,6 @@ public class SupplyTime {
     private String reason;//通过字段映射获得对应值
 
     private String time;
+
+    private String workflowNo;
 }

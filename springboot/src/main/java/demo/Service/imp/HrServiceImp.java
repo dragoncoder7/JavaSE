@@ -1,21 +1,18 @@
 package demo.Service.imp;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import demo.Service.HrService;
 import demo.Utils.Hr;
 import demo.entity.*;
 import demo.mapper.ecology.CommonMapper;
 import demo.mapper.ecology.HrMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,30 +45,52 @@ public class HrServiceImp implements HrService {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
+        int failedCount = 0;
+
+        int count = 0;
+
         try {
             List<OverWorker> overWorkerList = hrMapper.getOverWorkers(requestId);
+
             JsonNode jsonNode = objectMapper.readTree(init());
-            for (OverWorker overWorker :
-                    overWorkerList) {
-                overWorker.setLength(timeDiff(overWorker.getStartTime(), overWorker.getEndTime()));
+
+            for (OverWorker overWorker : overWorkerList) {
+                //构造数据
+                //overWorker.setLength(timeDiff(overWorker.getStartTime().replaceAll("\\s+", " "), overWorker.getEndTime().replaceAll("\\s+", " ")));
                 overWorker.setTime(overWorker.getStartTime().split(" ")[0]);
 
                 ((ObjectNode) jsonNode).put("username", overWorker.getName());
                 ((ObjectNode) jsonNode).put("a0190", overWorker.getEmployeeID());
                 ((ObjectNode) jsonNode).put("k1905", commonMapper.getMappingValue(workflowID, "jbmc1", String.valueOf(overWorker.getType())).trim());
                 ((ObjectNode) jsonNode).put("k1906", overWorker.getTime());
-                ((ObjectNode) jsonNode).put("k1907", overWorker.getStartTime());
-                ((ObjectNode) jsonNode).put("k1909", overWorker.getEndTime());
+                ((ObjectNode) jsonNode).put("k1907", overWorker.getStartTime().replaceAll("\\s+", " "));
+                ((ObjectNode) jsonNode).put("k1909", overWorker.getEndTime().replaceAll("\\s+", " "));
                 ((ObjectNode) jsonNode).put("k1913", overWorker.getLength());
                 ((ObjectNode) jsonNode).put("k1915", overWorker.getReason());
                 ((ObjectNode) jsonNode).put("k191C", commonMapper.getMappingValue(workflowID, "bcmc1", String.valueOf(overWorker.getTurn())).trim());
                 ((ObjectNode) jsonNode).put("k1920", overWorker.getIsChange() == 0 ? "是" : "否");
+                ((ObjectNode) jsonNode).put("OAFlowID", overWorker.getWorkflowNo());
                 ((ObjectNode) jsonNode).put("action", "setOvertime");
 
-                commonRes(map, objectMapper, jsonNode);
-
-                if (map.get("status").equals("failure")) {
-                    return map;
+                //处理数据结果
+                count++;
+                String res = hr.Post(jsonNode.toString());
+                JsonNode responseNode = objectMapper.readTree(res).get(0);
+                if (responseNode.get("error") != null){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("error").asText());
+                } else if (!responseNode.get("msg").asText().equals("OK!")){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("msg").asText());
+                } else {
+                    try {
+                        int i = hrMapper.updateOverWorkerFlag(overWorker.getId());
+                        if (i == 1){
+                            LOGGER.info("更新数据标识成功"+overWorker.getEmployeeID());
+                        }
+                    } catch (Exception e){
+                        LOGGER.info("更新数据标识异常！"+e.getMessage());
+                    }
                 }
             }
         } catch (JsonProcessingException e) {
@@ -81,7 +100,11 @@ public class HrServiceImp implements HrService {
             map.put("status","failure");
             map.put("msg",e);
         }
-
+        if (failedCount > 0) {
+            map.put("status","failure");
+        }else {
+            map.put("status","success");
+        }
         return map;
     }
     //同步请假
@@ -111,6 +134,8 @@ public class HrServiceImp implements HrService {
             ((ObjectNode) jsonNode).put("K2012", leave.getReason());
             ((ObjectNode) jsonNode).put("k2005", commonMapper.getMappingValue(workflowId, "qjlx", leave.getType()).trim());
             ((ObjectNode) jsonNode).put("OA_ID", leave.getWorkflowID());
+            ((ObjectNode) jsonNode).put("OAFlowID", leave.getWorkflowNo());
+
 
             map = calculate(jsonNode);
 
@@ -148,22 +173,30 @@ public class HrServiceImp implements HrService {
             String body = init();
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(body);
-            ((ObjectNode) jsonNode).put("action", "ResetLeave");
+
             ((ObjectNode) jsonNode).put("username", "system");
             //((ObjectNode) jsonNode).put("a0190", "1206004");
             ((ObjectNode) jsonNode).put("a0190", resetLeave.getEmployeeID());
             ((ObjectNode) jsonNode).put("k2005", resetLeave.getType());
             ((ObjectNode) jsonNode).put("beg", resetLeave.getStartTime());
             ((ObjectNode) jsonNode).put("end", resetLeave.getEndTime());
-            ((ObjectNode) jsonNode).put("k2011", resetLeave.getLength());
-            ((ObjectNode) jsonNode).put("k2010", resetLeave.getLength() / 8);
-            //((ObjectNode) jsonNode).put("C029007", rewardpunish.getWorkflowID());
+            ((ObjectNode) jsonNode).put("OAFlowID", resetLeave.getWorkflowNo());
             ((ObjectNode) jsonNode).put("OA_ID", resetLeave.getWorkflowID());
             ((ObjectNode) jsonNode).put("K2012", resetLeave.getReason());
 
-            commonRes(map,objectMapper,jsonNode);
+            map = calculate(jsonNode);
 
-            if (map.get("status").equals("failure")){
+            LOGGER.info(jsonNode.asText());
+
+            if (map.get("status").equals("success")) {
+
+                ((ObjectNode) jsonNode).put("k2010", Float.parseFloat(map.get("time").toString()) / 8);
+                ((ObjectNode) jsonNode).put("k2011", Float.parseFloat(map.get("time").toString()));
+                ((ObjectNode) jsonNode).put("action", "ResetLeave");
+
+                hr.Post(jsonNode.toString());
+
+            } else {
                 return map;
             }
         } catch (Exception e) {
@@ -195,7 +228,8 @@ public class HrServiceImp implements HrService {
             ((ObjectNode) jsonNode).put("k2011", businessLeave.getHours());
             ((ObjectNode) jsonNode).put("k2010", businessLeave.getHours() / 8);
             //((ObjectNode) jsonNode).put("C029007", rewardpunish.getWorkflowID());
-            ((ObjectNode) jsonNode).put("OA_ID", businessLeave.getWorkflowNo());
+            ((ObjectNode) jsonNode).put("OA_ID", requestID);
+            ((ObjectNode) jsonNode).put("OAFlowID", businessLeave.getWorkflowNo());
             ((ObjectNode) jsonNode).put("K2012", businessLeave.getReason());
 
             commonRes(map,objectMapper,jsonNode);
@@ -213,12 +247,15 @@ public class HrServiceImp implements HrService {
     //同步奖惩
     @Override
     public Map<String, Object> syncRewardPunishment(int requestID) {
+        int failedCount = 0;
+
+        int count = 0;
         Map<String, Object> map = new HashMap<>();
         List<RewardPunish> list = hrMapper.getRewardPunish(requestID);
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            for (RewardPunish rewardpunish :
-                    list) {
+            for (RewardPunish rewardpunish : list) {
+                count++;
                 String body = init();
                 int value = rewardpunish.getType();
                 String type = "";
@@ -227,7 +264,6 @@ public class HrServiceImp implements HrService {
                 }else if (value >= 4 && value <= 7){
                     type = "惩罚";
                 }
-
 
                 JsonNode jsonNode = objectMapper.readTree(body);
                 ((ObjectNode) jsonNode).put("action", "setRewardPunishment");
@@ -239,13 +275,27 @@ public class HrServiceImp implements HrService {
                 ((ObjectNode) jsonNode).put("C029013", type);
                 ((ObjectNode) jsonNode).put("C029015", rewardpunish.getPunishTime().replace("-",""));
                 ((ObjectNode) jsonNode).put("C02901", rewardpunish.getReason());
-                //((ObjectNode) jsonNode).put("C029007", rewardpunish.getWorkflowID());
-                ((ObjectNode) jsonNode).put("OA_ID", rewardpunish.getWorkflowNo());
+                ((ObjectNode) jsonNode).put("OAFlowID", rewardpunish.getWorkflowNo());
+                ((ObjectNode) jsonNode).put("OA_ID", requestID);
 
-                commonRes(map,objectMapper,jsonNode);
-
-                if (map.get("status").equals("failure")){
-                    return map;
+                //处理数据结果
+                String res = hr.Post(jsonNode.toString());
+                JsonNode responseNode = objectMapper.readTree(res).get(0);
+                if (responseNode.get("error") != null){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("error").asText());
+                } else if (!responseNode.get("msg").asText().equals("OK!")){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("msg").asText());
+                } else {
+                    try {
+                        int i = hrMapper.updateOverWorkerFlag(rewardpunish.getId());
+                        if (i == 1){
+                            LOGGER.info("更新数据标识成功"+rewardpunish.getEmployeeID());
+                        }
+                    } catch (Exception e){
+                        LOGGER.info("更新数据标识异常！"+e.getMessage());
+                    }
                 }
             }
         }catch (Exception e){
@@ -253,11 +303,19 @@ public class HrServiceImp implements HrService {
             map.put("status","failure");
             map.put("msg",e);
         }
+        if (failedCount > 0) {
+            map.put("status","failure");
+        }else {
+            map.put("status","success");
+        }
         return map;
     }
     //同步考勤
     @Override
     public Map<String, Object> syncTimeRecords(int requestID,int workflowId) {
+        int failedCount = 0;
+
+        int count = 0;
         Map<String, Object> map = new HashMap<>();
         List<SupplyTime> list = hrMapper.getSupplyTimes(requestID);
         ObjectMapper objectMapper = new ObjectMapper();
@@ -265,16 +323,34 @@ public class HrServiceImp implements HrService {
             for (SupplyTime entity : list) {
                 JsonNode jsonNode = objectMapper.readTree(init());
                 ((ObjectNode) jsonNode).put("username", "system");
-
                 ((ObjectNode) jsonNode).put("a0190", entity.getEmployeeID());
                 ((ObjectNode) jsonNode).put("TMRecores", entity.getTime());
+                ((ObjectNode) jsonNode).put("OAFlowID", entity.getWorkflowNo());
+                ((ObjectNode) jsonNode).put("OA_ID", requestID);
                 ((ObjectNode) jsonNode).put("reason", commonMapper.getMappingValue(workflowId,"bdyy",entity.getReason()).trim());
                 ((ObjectNode) jsonNode).put("action", "settimerecords");
 
-                commonRes(map, objectMapper, jsonNode);
-
-                if (map.get("status").equals("failure")){
-                    return map;
+                //处理数据结果
+                count++;
+                String res = hr.Post(jsonNode.toString());
+                JsonNode responseNode = objectMapper.readTree(res).get(0);
+                if (responseNode.get("error") != null){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("error").asText());
+                } else if (!responseNode.get("msg").asText().equals("OK!")){
+                    failedCount++;
+                    map.put(String.valueOf(count),responseNode.get("msg").asText());
+                } else {
+                    try {
+                        int i = hrMapper.updateOverWorkerFlag(entity.getId());
+                        if (i == 1){
+                            LOGGER.info("更新数据标识成功"+entity.getEmployeeID());
+                        } else {
+                            LOGGER.info("更新数据标识失败"+entity.getEmployeeID());
+                        }
+                    } catch (Exception e){
+                        LOGGER.info("更新数据标识异常！"+e.getMessage());
+                    }
                 }
             }
         } catch (JsonProcessingException e) {
@@ -283,6 +359,11 @@ public class HrServiceImp implements HrService {
             LOGGER.info("产生异常："+e);
             map.put("status","failure");
             map.put("msg",e);
+        }
+        if (failedCount > 0) {
+            map.put("status","failure");
+        }else {
+            map.put("status","success");
         }
         return map;
     }
@@ -322,7 +403,7 @@ public class HrServiceImp implements HrService {
         }
         return map;
     }
-
+    //适用于处理单条数据的hr流程
     private void commonRes(Map<String, Object> map, ObjectMapper objectMapper, JsonNode jsonNode) throws JsonProcessingException {
         String res = hr.Post(jsonNode.toString());
 
@@ -341,63 +422,18 @@ public class HrServiceImp implements HrService {
     }
 
     private String init(){
-        return """
-                {
-                }""";
-    }
-//    private String getBC(OverWorker overWorker) {
-//        String body = """
-//                {
-//                    "action": "getbc",
-//                    "username": "",
-//                    "a0190": "",
-//                    "beg": "",
-//                    "end": ""
-//                }""";
-//
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        String res;
-//        try {
-//            JsonNode jsonNode = objectMapper.readTree(body);
-//            ((ObjectNode) jsonNode).put("username", overWorker.getName());
-//            ((ObjectNode) jsonNode).put("a0190", overWorker.getEmployeeID());
-//            ((ObjectNode) jsonNode).put("beg", overWorker.getStartTime());
-//            ((ObjectNode) jsonNode).put("end", overWorker.getEndTime());
-//
-//            res = hr.Post(jsonNode.toString());
-//
-//        } catch (JsonProcessingException e) {
-//            throw new RuntimeException(e);
-//        }
-//        return res;
-//    }
-
-    private float timeDiff(String startTime,String endTime){
-        // 定义时间格式
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-
-        // 开始时间和结束时间
-        LocalDateTime start = LocalDateTime.parse(startTime, formatter);
-        LocalDateTime end = LocalDateTime.parse(endTime, formatter);
-
-        // 计算两个时间的差值
-        Duration duration = Duration.between(start, end);
-
-        // 将差值转换为小时，分钟部分也换算为小时
-
-        // 用变量表示时间差
-        return (float) (duration.toMinutes() / 60.0);
+        return "{\n" +
+                "                }";
     }
 
     public boolean checkInfo(String username, String employeeId){
         ObjectMapper objectMapper = new ObjectMapper();
-        String body = """
-                {
-                    "action": "CheckA0190",
-                    "username": "system",
-                    "a0190": "",
-                    "a0101": ""
-                }""";
+        String body = "{\n" +
+                "                    \"action\": \"CheckA0190\",\n" +
+                "                    \"username\": \"system\",\n" +
+                "                    \"a0190\": \"\",\n" +
+                "                    \"a0101\": \"\"\n" +
+                "                }";
 
 
         try {

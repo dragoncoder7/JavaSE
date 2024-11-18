@@ -22,4 +22,6 @@ public class ResetLeave {
     private String workflowID;
 
     private float length;
+
+    private String workflowNo;
 }

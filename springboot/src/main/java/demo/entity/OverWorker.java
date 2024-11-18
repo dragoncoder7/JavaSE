@@ -7,6 +7,7 @@ import lombok.Data;
  */
 @Data
 public class OverWorker {
+    private int id;
     //姓名
     private String name;
 
@@ -21,8 +22,6 @@ public class OverWorker {
 
     //加班结束时间
     private String endTime;
-
-
 
     //加班事由
     private String reason;
@@ -39,5 +38,5 @@ public class OverWorker {
     //加班日期
     private String time;
 
-
+    private String workflowNo;
 }

@@ -22,4 +22,6 @@ public class Leave {
     private String workflowID;
 
     private int length;
+
+    private String workflowNo;
 }

@@ -29,7 +29,7 @@ public class HrController {
      * @param map 请求体响应结果
      * @return 响应结果
      */
-    @RequestMapping(value = "/syncOvertime", method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
+    @RequestMapping(value = "/syncOvertime", method = RequestMethod.POST, consumes = "application/json;charset=utf-8", produces = "application/json;charset=utf-8")
     public Map<String,Object> syncOvertime(@RequestBody Map<String,Object> map){
         LOGGER.info(map.toString());
 
