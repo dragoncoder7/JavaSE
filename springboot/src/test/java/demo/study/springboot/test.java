@@ -20,6 +20,7 @@ public class test {
 
     @Test
     public void abed(){
+        //PagerHelp.start(1,3);
         permissionRemove("A0117856");
     }
     public void permissionRemove(String employeeID){

@@ -1,425 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaSE:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BeansEndpointTabSettings">
+    <option name="diagramMode" value="true" />
+    <option name="showContexts" value="false" />
+    <option name="showLibraryBeans" value="false" />
+  </component>
+  <component name="BeansView">
+    <option name="showModules" value="false" />
+    <option name="showSidePanel" value="false" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="1.添加了SpringBoot项目&#10;2.以这一次git的全部内容为base&#10;3.以及添加HTTP访问的相关测试内容">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/springboot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332/storage_v2/_src_/database/hxhrEwpt.cKNFtw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332/storage_v2/_src_/database/hxhrEwpt.cKNFtw/schema/dbo.sYMBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.corrupted.20240417-110508.reason.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a.corrupted.20240417-110508.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_19_11_51__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/ECOLOGY.pqjfuA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/JavaSE-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/MyCircularQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution15.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution29.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution30.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution31.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution32.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution33.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution34.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/updateJobTitle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/ECOLOGY.pqjfuA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/JavaSE-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/MyCircularQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution15.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution29.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution30.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution31.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution32.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution33.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution34.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/TreeNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/updateJobTitle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfArrayOfString.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfString.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowBaseInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowDetailTableInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestTableField.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestTableRecord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DeleteRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DeleteRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoCreateRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoCreateRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoCreateWorkflowRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoCreateWorkflowRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoForceOver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/DoForceOverResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/Forward2WorkflowRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/Forward2WorkflowRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ForwardWorkflowRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ForwardWorkflowRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowRequestInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowRequestInfoResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount4Ofs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount4OfsResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList4Ofs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList4OfsResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetLeaveDays.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetLeaveDaysResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCountResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList4OS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList4OSResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestListResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetTodoData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetTodoDataResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetUserId.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetUserIdResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowNewFlag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowNewFlagResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequest4Split.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequest4SplitResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequestLogs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequestLogsResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GetWorkflowRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GivingOpinions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/GivingOpinionsResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/ObjectFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/SubmitWorkflowRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/SubmitWorkflowRequestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowBaseInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowDetailTableInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowMainTableInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowRequestInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowRequestLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowRequestTableField.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowRequestTableRecord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WorkflowServicePortType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WriteWorkflowReadFlag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/WriteWorkflowReadFlagResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebService/package-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/restervice/Greeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/restervice/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/HttpGetExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/DepartmentBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceHttpBindingStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServicePortType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/JobTitleBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/SubCompanyBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebServiceTest/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServicePortType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WorkflowServiceTestCase.java" afterDir="false" />
+    <list default="true" id="b8e63bfa-2de3-4983-b303-585eb02714e1" name="Changes" comment="pom数据同步。 重新新建一个Maven repository">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fb15461e-3630-4cde-9f4a-604333f7ea8c/storage_v2/_src_/schema/yupi.FcY4AA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T155054.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T155428.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T155650.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T160815.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T161236.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T161253.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-08T161553.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-10T093854.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-10T095432.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-10T095701.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-17T155040.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-17T155441.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-21T163836.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T092629.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T092902.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T151142.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T151229.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T151842.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T152213.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T152435.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-22T153743.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-25T140815.415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-25T140919.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-25T141028.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-25T153105.405.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-25T153109.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-10-26T084723.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T094749.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T094813.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T094840.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T094940.415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T095028.415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T095111.415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T095203.415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T113327.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T113915.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114053.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114409.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114434.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114558.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114632.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114718.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114741.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-15T114822.200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T141300.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T141513.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T142121.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T143645.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T143908.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-19T143952.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/DataSource/mysqlConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/mapper/mysql/AllMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/mapper/mysql/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/application1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Expection/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/Circul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/Solution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/abc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/abcc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/JdkProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/MD5Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Thread/ThreadStudy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Thread/abc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaSE_Web_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c44eca86-ee18-4fe6-b52d-4efeba207afe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c44eca86-ee18-4fe6-b52d-4efeba207afe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c44eca86-ee18-4fe6-b52d-4efeba207afe/storage_v2/_src_/schema/ECOLOGY.pqjfuA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c44eca86-ee18-4fe6-b52d-4efeba207afe/storage_v2/_src_/schema/ECOLOGY.pqjfuA.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332/storage_v2/_src_/database/hxhrEwpt.cKNFtw/schema/INFORMATION_SCHEMA.NBgcMw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/school.dFvhyQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/school.dFvhyQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5589ffe5-10f8-4e5a-9093-b4998fd7d332/storage_v2/_src_/database/hxhrEwpt.cKNFtw/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cde47035-7f53-46f8-91de-3eb262f4b56a/storage_v2/_src_/schema/world.khvBBg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_12_14_05_[Changes]1/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_19_11_51_[Changes]/shelved.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_12_14_05__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_9_14_05_[Changes]1/Solution49.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_9_14_05_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_9_14_05__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_9_14_08_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_4_9_14_08__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2024_4_12_14_11_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2024_4_12_14_11__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_4_9_14_17_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_4_9_14_17__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/ECOLOGY.pqjfuA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/JavaSE-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/MyCircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution31.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/Solution34.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/updateJobTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/ECOLOGY.pqjfuA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/JavaSE-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/MyCircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution31.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/Solution34.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26_[Changes]/updateJobTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_11_10_26__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSE.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfArrayOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowBaseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowDetailTableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestTableField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ArrayOfWorkflowRequestTableRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DeleteRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DeleteRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoCreateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoCreateRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoCreateWorkflowRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoCreateWorkflowRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoForceOver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/DoForceOverResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Forward2WorkflowRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Forward2WorkflowRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ForwardWorkflowRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ForwardWorkflowRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetAllWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetBeRejectWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCount4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestList4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCCWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowRequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowRequestInfoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetCreateWorkflowTypeListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetDoingWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetForwardWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount4Ofs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCount4OfsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList4Ofs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestList4OfsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetHendledWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetLeaveDays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetLeaveDaysResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCount4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestList4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetMyWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCount4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestList4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetProcessedWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToBeReadWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCount4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestCountResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList4OS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestList4OSResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetToDoWorkflowRequestListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetTodoData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetTodoDataResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetUserId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetUserIdResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowNewFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowNewFlagResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequest4Split.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequest4SplitResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequestLogs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequestLogsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GetWorkflowRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GivingOpinions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/GivingOpinionsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/SubmitWorkflowRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/SubmitWorkflowRequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowBaseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowDetailTableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowMainTableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowRequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowRequestLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowRequestTableField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowRequestTableRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WorkflowServicePortType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WriteWorkflowReadFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WriteWorkflowReadFlagResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/package-info.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/Controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/Controller/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/DataSource/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/DataSource/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/SpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/Utils/Https.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/Utils/Https.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/demo/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/LeaveMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/SpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/SpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/target/classes/demo/Controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/demo/Controller/ControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/templates/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/SqlSeverConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/SqlSeverConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution33.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution36.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution36.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowBaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowBaseInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowDetailTableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowDetailTableInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowMainTableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowMainTableInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowRequestInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowRequestLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowRequestTableField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestTableField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowRequestTableRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestTableRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowService.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService.wsdl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowService1.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService1.wsdl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowServiceHttpBindingStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceHttpBindingStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowServiceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowServicePortType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/WorkflowServiceTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaSE-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AlgorithmDemo/InsertSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AlgorithmDemo/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/CollectionsDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/ListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/MapTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/PD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/SetTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AssembliesDemo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/MaxMindMin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/shuzu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BranchStudy/switchStudy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/DogTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Inner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Inner1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Outer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Outer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People$Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/People.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDemo/TestDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Database/updateJobTitle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/AbstractChatRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/ChatRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/MediatorDemo/UserC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/ProxyDemo/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/ProxyDemo/Proxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/ProxyDemo/RealSubject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignModeDemo/ProxyDemo/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/CatchException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/ExceptionStackTrace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/ExceptionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/MultipleCapturesDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/MyAriException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExceptionHandleDemo/ThrowTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IO_Demo/FileCut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IO_Demo/FileDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IO_Demo/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/FlatMapTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/FunctionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest$GreetingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest$MathOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/LambdaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/MergeStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/PredicateDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LambdaDemo/StreamTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/BeverageExchange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/OneTwoThree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/ProblemsStatics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/ScoreEval.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/Solution$Monster.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LanQiao/ThreeYuan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/MinStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/MyCircularQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/MyQueue$Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/MyQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/MyStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/QueueAndStack/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution14$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution14$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution15$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution32.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution33.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution34.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution35.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution36.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution37.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution38.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution39.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution40.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution41.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution42.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution43.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution44.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution45.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution46.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution47.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution48.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution49.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution50.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution59.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution60.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution61.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution62.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution63.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution65.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution66.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution67.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution68.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution69.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution70.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution71.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution72.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution73.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution74.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution75.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution76.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution77.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution78.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution79.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution80.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution81.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution82.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution83.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution84.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution85.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution86.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution87.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Solution9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/Tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_10_8_44_[Changes]/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/solution88.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueueAndStack/Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueueAndStack/MyCircularQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueueAndStack/MyQueue$Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueueAndStack/MyQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegexDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/ArraysDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/CalendarDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/DateDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/RandomDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/StringBuilderDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/SystemDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularClass/Test/ArrayTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/ScannerDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBufferDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/StringBuilderDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/Stringlength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/reverseArrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/sum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/wang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StringStudy/weiyunsuan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/demo/SpringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/demo/SpringbootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution47.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution47.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/DepartmentBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceHttpBindingStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServicePortType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/HrmServiceTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/JobTitleBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/SubCompanyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebServiceTest/UserBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowBaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowDetailTableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowMainTableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestTableField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowRequestTableRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowService1.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceHttpBindingStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServicePortType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/test/WorkflowServiceTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WorkflowServiceTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -430,14 +320,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="HTML File" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="maoyunlong1" />
@@ -458,18 +355,35 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-21/lib/src.zip!/java.base/java/lang/StringIndexOutOfBoundsException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-21/lib/src.zip!/java.base/java/util/Arrays.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-21/lib/src.zip!/java.base/java/util/function/Predicate.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../aaaDocument/OA王棕交接/MavenJar/org/springframework/boot/spring-boot-autoconfigure/3.3.0/spring-boot-autoconfigure-3.3.0.jar!/org/springframework/boot/autoconfigure/transaction/TransactionAutoConfiguration.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../aaaDocument/OA王棕交接/MavenJar/org/springframework/spring-tx/6.1.8/spring-tx-6.1.8.jar!/org/springframework/transaction/annotation/TransactionManagementConfigurer.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\aaaDocument\OA王棕交接\MavenJar" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
+        <option name="localRepository" value="F:\maoyunlong\Maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.9.8" />
         <option name="useMavenConfig" value="false" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.9.8\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -485,57 +399,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "ClassDemo.Animal",
-    "create.test.in.the.same.root": "true",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "E:/Project_my/JavaSE/springboot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "b6f591613f9d7043ae94f25613ea455f",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;ClassDemo.Animal&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Project_my/JavaSE/springboot/src/main/resources/application1.yml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9bd17d6e56d0ce5f40a92776eaaad8f3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "oracle",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;,
+      &quot;sqlserver&quot;,
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "TSQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;TSQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Service.imp" />
       <recent name="DesignModeDemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project_my\JavaSE\springboot\src\main\resources" />
+      <recent name="E:\Project_my\JavaSE\springboot\src\main\java\demo\entity" />
       <recent name="E:\Project_my\JavaSE\src\main\java" />
       <recent name="E:\Project_my\JavaSE\src\main\java\com\test" />
       <recent name="E:\Project_my\JavaSE\src\main\java\LeetCode" />
@@ -553,13 +470,62 @@
       <recent name="ClassDemo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.Service.imp" />
+      <recent name="demo.mapper.ecology" />
+      <recent name="demo.entity" />
       <recent name="" />
       <recent name="LeetCode1" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringDemo">
-    <configuration name="HttpGetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.springboot.HttpGetExample" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.leetcode8">
+    <configuration name="leetcode7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.LeetCode75.leetcode7" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.LeetCode75.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetcode8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.LeetCode75.leetcode8" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.LeetCode75.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.test" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
@@ -567,39 +533,43 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="demo.study.springboot" />
+      <option name="MAIN_CLASS_NAME" value="demo.study.springboot.SpringbootApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.SpringbootApplication" />
+    <configuration name="SpringbootApplicationTests.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="demo.study.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringDemo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="demo.SpringbootApplication" />
+      <option name="PACKAGE_NAME" value="demo.study.springboot" />
+      <option name="MAIN_CLASS_NAME" value="demo.study.springboot.SpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HttpGetExample" />
-      <item itemvalue="Application.SpringbootApplication" />
-      <item itemvalue="Spring Boot.SpringDemo" />
+      <item itemvalue="Application.leetcode7" />
+      <item itemvalue="Application.leetcode8" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="JUnit.SpringbootApplicationTests" />
+      <item itemvalue="JUnit.SpringbootApplicationTests.testSelect" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HttpGetExample" />
-        <item itemvalue="Application.SpringbootApplication" />
+        <item itemvalue="Application.leetcode8" />
+        <item itemvalue="Application.leetcode7" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.SpringbootApplicationTests.testSelect" />
+        <item itemvalue="JUnit.SpringbootApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -730,7 +700,60 @@
       <workItem from="1721088635869" duration="3008000" />
       <workItem from="1721091851375" duration="5628000" />
       <workItem from="1721101130467" duration="277000" />
-      <workItem from="1721101416991" duration="7992000" />
+      <workItem from="1721101416991" duration="18064000" />
+      <workItem from="1721208895905" duration="615000" />
+      <workItem from="1721209528564" duration="16083000" />
+      <workItem from="1721374788798" duration="654000" />
+      <workItem from="1721619018785" duration="4347000" />
+      <workItem from="1721728817931" duration="4076000" />
+      <workItem from="1721982162447" duration="356000" />
+      <workItem from="1722065279594" duration="7192000" />
+      <workItem from="1722218620389" duration="30131000" />
+      <workItem from="1722340100157" duration="259000" />
+      <workItem from="1722340374493" duration="61171000" />
+      <workItem from="1723510209053" duration="45114000" />
+      <workItem from="1723865514874" duration="15835000" />
+      <workItem from="1724025922197" duration="60210000" />
+      <workItem from="1724381334218" duration="38980000" />
+      <workItem from="1725238581711" duration="10985000" />
+      <workItem from="1725335516652" duration="3411000" />
+      <workItem from="1725408983744" duration="22873000" />
+      <workItem from="1725528608938" duration="48000" />
+      <workItem from="1725586181073" duration="14174000" />
+      <workItem from="1726014778720" duration="21618000" />
+      <workItem from="1726445828699" duration="32472000" />
+      <workItem from="1727227949481" duration="10686000" />
+      <workItem from="1727256659855" duration="953000" />
+      <workItem from="1727309945790" duration="42910000" />
+      <workItem from="1728269560331" duration="39997000" />
+      <workItem from="1728613402864" duration="1738000" />
+      <workItem from="1728864483217" duration="581000" />
+      <workItem from="1728865071826" duration="339000" />
+      <workItem from="1728865413552" duration="582000" />
+      <workItem from="1728866008050" duration="664000" />
+      <workItem from="1728867494207" duration="859000" />
+      <workItem from="1728871080438" duration="8763000" />
+      <workItem from="1728983341488" duration="5094000" />
+      <workItem from="1729148189349" duration="33829000" />
+      <workItem from="1729749460023" duration="16601000" />
+      <workItem from="1729847692592" duration="62673000" />
+      <workItem from="1731045719496" duration="7181000" />
+      <workItem from="1731309771238" duration="546000" />
+      <workItem from="1731310580843" duration="325000" />
+      <workItem from="1731371587246" duration="7607000" />
+      <workItem from="1731568442135" duration="7411000" />
+      <workItem from="1731639327945" duration="4138000" />
+      <workItem from="1731889802409" duration="24310000" />
+      <workItem from="1732002090540" duration="3818000" />
+      <workItem from="1732062358949" duration="794000" />
+      <workItem from="1732064817387" duration="10731000" />
+      <workItem from="1732181234840" duration="9183000" />
+      <workItem from="1732587365676" duration="4183000" />
+      <workItem from="1732694134894" duration="3281000" />
+      <workItem from="1732839746970" duration="2042000" />
+      <workItem from="1732931670371" duration="683000" />
+      <workItem from="1732959354687" duration="663000" />
+      <workItem from="1733101646778" duration="17297000" />
     </task>
     <task id="LOCAL-00001" summary="xuexi">
       <created>1677509729189</created>
@@ -893,70 +916,6 @@
       <option name="project" value="LOCAL" />
       <updated>1679588139565</updated>
     </task>
-    <task id="LOCAL-00024" summary="LeetCode题解">
-      <option name="closed" value="true" />
-      <created>1705135085803</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1705135085803</updated>
-    </task>
-    <task id="LOCAL-00025" summary="LeetCode2024.3.1 题解">
-      <option name="closed" value="true" />
-      <created>1709285483502</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1709285483502</updated>
-    </task>
-    <task id="LOCAL-00026" summary="0">
-      <option name="closed" value="true" />
-      <created>1710486092029</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1710486092029</updated>
-    </task>
-    <task id="LOCAL-00027" summary="leetcode">
-      <option name="closed" value="true" />
-      <created>1717726695716</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1717726695716</updated>
-    </task>
-    <task id="LOCAL-00028" summary="leetcode">
-      <option name="closed" value="true" />
-      <created>1717838948217</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1717838948217</updated>
-    </task>
-    <task id="LOCAL-00029" summary="leetcode">
-      <option name="closed" value="true" />
-      <created>1717838976000</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1717838976000</updated>
-    </task>
-    <task id="LOCAL-00030" summary="leetcode">
-      <option name="closed" value="true" />
-      <created>1718184816176</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1718184816176</updated>
-    </task>
-    <task id="LOCAL-00031" summary="ALL">
-      <option name="closed" value="true" />
-      <created>1720431085385</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1720431085385</updated>
-    </task>
     <task id="LOCAL-00032" summary="ALL">
       <option name="closed" value="true" />
       <created>1720572405716</created>
@@ -997,7 +956,175 @@
       <option name="project" value="LOCAL" />
       <updated>1721109180869</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="1.添加了SpringBoot项目&#10;2.以这一次git的全部内容为base&#10;3.以及添加HTTP访问的相关测试内容">
+      <option name="closed" value="true" />
+      <created>1721119936581</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1721119936581</updated>
+    </task>
+    <task id="LOCAL-00038" summary="@Scheduled注解  Cron表达式">
+      <option name="closed" value="true" />
+      <created>1721641017128</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1721641017128</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add">
+      <option name="closed" value="true" />
+      <created>1721728907121</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1721728907121</updated>
+    </task>
+    <task id="LOCAL-00040" summary="更新">
+      <option name="closed" value="true" />
+      <created>1722340746774</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722340746774</updated>
+    </task>
+    <task id="LOCAL-00041" summary="更新">
+      <option name="closed" value="true" />
+      <created>1722340967689</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1722340967689</updated>
+    </task>
+    <task id="LOCAL-00042" summary="更新">
+      <option name="closed" value="true" />
+      <created>1722341016423</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722341016423</updated>
+    </task>
+    <task id="LOCAL-00043" summary="更新">
+      <option name="closed" value="true" />
+      <created>1722419027212</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1722419027212</updated>
+    </task>
+    <task id="LOCAL-00044" summary="更新">
+      <option name="closed" value="true" />
+      <created>1724047786645</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1724047786645</updated>
+    </task>
+    <task id="LOCAL-00045" summary="更新">
+      <option name="closed" value="true" />
+      <created>1724048099137</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724048099137</updated>
+    </task>
+    <task id="LOCAL-00046" summary="更新完成 上传附件功能已实现">
+      <option name="closed" value="true" />
+      <created>1724134507890</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1724134507890</updated>
+    </task>
+    <task id="LOCAL-00047" summary="移位置">
+      <option name="closed" value="true" />
+      <created>1725268772777</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1725268772777</updated>
+    </task>
+    <task id="LOCAL-00048" summary="更新">
+      <option name="closed" value="true" />
+      <created>1725269002820</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1725269002820</updated>
+    </task>
+    <task id="LOCAL-00049" summary="更新">
+      <option name="closed" value="true" />
+      <created>1725938300508</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1725938300508</updated>
+    </task>
+    <task id="LOCAL-00050" summary="更新 添加了科伦特接口内容">
+      <option name="closed" value="true" />
+      <created>1728269593587</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1728269593587</updated>
+    </task>
+    <task id="LOCAL-00051" summary="更新 添加了科伦特接口内容">
+      <option name="closed" value="true" />
+      <created>1728269831120</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1728269831120</updated>
+    </task>
+    <task id="LOCAL-00052" summary="代码数据同步。">
+      <option name="closed" value="true" />
+      <created>1729934715651</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934715651</updated>
+    </task>
+    <task id="LOCAL-00053" summary="代码数据同步。">
+      <option name="closed" value="true" />
+      <created>1729938390209</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1729938390209</updated>
+    </task>
+    <task id="LOCAL-00054" summary="代码数据同步。">
+      <option name="closed" value="true" />
+      <created>1730277519837</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1730277519837</updated>
+    </task>
+    <task id="LOCAL-00055" summary="代码数据同步。">
+      <option name="closed" value="true" />
+      <created>1730453645596</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1730453645596</updated>
+    </task>
+    <task id="LOCAL-00056" summary="代码数据同步。">
+      <option name="closed" value="true" />
+      <created>1731922384945</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1731922384945</updated>
+    </task>
+    <task id="LOCAL-00057" summary="pom数据同步。 重新新建一个Maven repository">
+      <option name="closed" value="true" />
+      <created>1732004608846</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1732004608846</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1009,6 +1136,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/main" />
@@ -1029,6 +1161,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -1047,61 +1190,61 @@
     <MESSAGE value="ALL" />
     <MESSAGE value="SpringBoot项目" />
     <MESSAGE value="1.添加了SpringBoot项目&#10;2.以这一次git的全部内容为base&#10;3.以及添加HTTP访问的相关测试内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.添加了SpringBoot项目&#10;2.以这一次git的全部内容为base&#10;3.以及添加HTTP访问的相关测试内容" />
+    <MESSAGE value="@Scheduled注解  Cron表达式" />
+    <MESSAGE value="add" />
+    <MESSAGE value="更新完成 上传附件功能已实现" />
+    <MESSAGE value="移位置" />
+    <MESSAGE value="更新" />
+    <MESSAGE value="更新 添加了科伦特接口内容" />
+    <MESSAGE value="代码数据同步。" />
+    <MESSAGE value="pom数据同步。 重新新建一个Maven repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom数据同步。 重新新建一个Maven repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.RuntimeException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="15" />
-        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution14.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution14.java</url>
           <line>18</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution15.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution15.java</url>
           <line>40</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution20.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution20.java</url>
           <line>11</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution20.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution20.java</url>
           <line>6</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution23.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution23.java</url>
           <line>10</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution24.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution24.java</url>
           <line>31</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution24.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution24.java</url>
           <line>41</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution26.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution26.java</url>
           <line>13</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution28.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution28.java</url>
           <line>55</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -1116,19 +1259,9 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Tree/TreeNode.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/MinStack.java</url>
           <line>47</line>
           <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution49.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/LevelOrder.java</url>
@@ -1146,38 +1279,38 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution29.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution29.java</url>
           <line>67</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution29.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution29.java</url>
           <line>46</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution29.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution29.java</url>
           <line>163</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution31.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution31.java</url>
           <line>9</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution31.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution31.java</url>
           <line>58</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution31.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution31.java</url>
           <line>68</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/MyCircularQueue.java</url>
-          <line>77</line>
+          <line>69</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1191,27 +1324,202 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution33.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution33.java</url>
           <line>13</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution33.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution33.java</url>
           <line>32</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution36.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution36.java</url>
           <line>39</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution36.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution36.java</url>
           <line>11</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Service/imp/LeaveServiceImp.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Utils/ZipUtils.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Utils/ZipUtils.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Utils/ZipUtils.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution40.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/ToHeliosController.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/DataSource/TransactionConfig.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution42.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution42.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution42.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution45.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution45.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Utils/Hr.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/Solution1.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/QueueAndStack/Solution1.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution46.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution46.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/demo/Demo/ThreadDemo1.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/demo/Controller/HrController.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/Solution/Solution47.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/test/java/demo/study/springboot/SpringbootApplicationTests.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Test/test.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Test/test.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LeetCode/LeetCode75/leetcode7.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.ibatis.binding.MapperProxy" memberName="mapperInterface" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="resNode.get(&quot;leaveJCXX&quot;).asText()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -1,0 +1,561 @@
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T143952.500.json
+
+###
+
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T143908.500.json
+
+###
+
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T143645.500.json
+
+###
+
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T142121.500.json
+
+###
+
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T141513.500.json
+
+###
+
+GET http://localhost:8081/HrController/test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-19T141300.500.json
+
+###
+
+GET http://localhost:8081/test1?time=10
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114822.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=60
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114741.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=60
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114718.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=60
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114632.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=60
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114558.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=10
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114434.200.txt
+
+###
+
+GET http://localhost:8081/test1?time=10
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114409.200.txt
+
+###
+
+GET http://localhost:8081/test1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T114053.200.txt
+
+###
+
+GET http://localhost:8081/test1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T113915.200.txt
+
+###
+
+GET http://localhost:8081/test1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-15T113327.200.txt
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Length: 44
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":"7692564", "workflowId":"1363"}
+
+<> 2024-11-09T095203.415.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Length: 40
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":7692564, "workflowId":1363}
+
+<> 2024-11-09T095111.415.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Length: 40
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":7692564, "workflowId":1363}
+
+<> 2024-11-09T095028.415.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Length: 86
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Content-Type: application/json;charset=utf-8
+
+{"requestId":7692564, "workflowId":1363}
+
+<> 2024-11-09T094940.415.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+{"requestId": 7692564, "workflowId":1363}
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-09T094840.400.html
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+{"requestId"=7692564, "workflowId"=1363}:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-09T094813.400.html
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+{requestId=7692564, workflowId=1363}:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-11-09T094749.400.html
+
+###
+
+GET http://localhost:8081/HrController/checkInfo?username=杨玲&employeeId=2103201
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-26T084723.200.json
+
+###
+
+GET http://localhost:8081/HrController/checkInfo?username=杨玲&employeeId=2103201
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-25T153109.200.json
+
+###
+
+POST http://localhost:8081/HrController/checkInfo
+Content-Type: application/json;charset=utf-8
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-25T153105.405.json
+
+###
+
+GET http://localhost:8081/HrController/checkInfo?username=杨玲&employeeId=2103201
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-25T141028.200.json
+
+###
+
+GET http://localhost:8081/HrController/checkInfo?username=杨玲&employeeId=2103201
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-25T140919.200.json
+
+###
+
+GET http://localhost:8081/HrController/checkInfo?username=杨玲&employeeId=2103201
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-25T140815.415.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowId": "1269"}
+
+<> 2024-10-22T153743.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowId": "1269"}
+
+<> 2024-10-22T152435.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowId": "1269"}
+
+<> 2024-10-22T152213.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowId": "1269"}
+
+<> 2024-10-22T151842.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowId": "1269"}
+
+<> 2024-10-22T151229.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncResetLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7585886",
+  "workflowID": "1269"}
+
+<> 2024-10-22T151142.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncBusinessLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "9002376"}
+
+<> 2024-10-22T092902.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncBusinessLeave
+Content-Type: application/json;charset=utf-8
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "9002376"}
+
+<> 2024-10-22T092629.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncRewardPunishment
+Content-Type: application/json;charset=utf-8
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId": "7576094"}
+
+<> 2024-10-21T163836.200.json
+
+###
+
+GET http://localhost:8081/test1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-17T155441.200.txt
+
+###
+
+GET http://localhost:8081/test1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-10-17T155040.200.txt
+
+###
+
+POST http://localhost:8081/HrController/syncTimeRecords
+Content-Type: application/json;charset=utf-8
+Content-Length: 40
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002365, "workflowId":1266}
+
+<> 2024-10-10T095701.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncTimeRecords
+Content-Type: application/json;charset=utf-8
+Content-Length: 40
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002365, "workflowId":1266}
+
+<> 2024-10-10T095432.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncTimeRecords
+Content-Type: application/json;charset=utf-8
+Content-Length: 40
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002365, "workflowId":1266}
+
+<> 2024-10-10T093854.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T161553.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T161253.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T161236.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T160815.500.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T155650.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T155428.200.json
+
+###
+
+POST http://localhost:8081/HrController/syncOvertime
+Content-Type: application/json;charset=utf-8
+Content-Length: 21
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"requestId":9002363}
+
+<> 2024-10-08T155054.200.json
+
+###
+

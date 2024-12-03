@@ -1,0 +1,4 @@
+{
+  "msg": "ERROR:不能将值 NULL 插入列 'A0188'，表 'hrmis.dbo.K07'；列不允许有 Null 值。INSERT 失败。",
+  "status": "failure"
+}

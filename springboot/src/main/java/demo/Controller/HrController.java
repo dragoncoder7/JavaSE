@@ -1,6 +1,10 @@
 package demo.Controller;
 
+import com.baomidou.mybatisplus.core.toolkit.Assert;
 import demo.Service.HrService;
+import demo.entity.User;
+import demo.mapper.mysql.AllMapper;
+import demo.mapper.mysql.UserMapper;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -19,9 +23,24 @@ public class HrController {
 
     private final HrService hrService;
 
+    private final UserMapper userMapper;
 
-    public HrController(HrService hrService){
+    private final AllMapper allMapper;
+
+
+    public void testSelect() {
+        System.out.println(("----- selectAll method test ------"));
+        List<User> userList = userMapper.selectList(null);
+        Assert.isTrue(5 == userList.size(), "");
+        userList.forEach(System.out::println);
+    }
+
+
+    public HrController(HrService hrService, UserMapper userMapper, AllMapper allMapper){
         this.hrService = hrService;
+        this.userMapper = userMapper;
+        //testSelect();
+        this.allMapper = allMapper;
     }
 
     /**
@@ -121,12 +140,13 @@ public class HrController {
 
     }
 
-    @RequestMapping(value = "/test", method = RequestMethod.POST)
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
-        Map<String, Object> map = new HashMap<>();
-        map.put("requestId", 9002350);
-        Map<String, Object> res = syncLeave(map);
-        return res.toString();
+        System.out.println(allMapper.getAllUsers());
+        User user = userMapper.selectById(1);
+        System.out.println(user);
+
+        return "res.toString()";
     }
 
     @RequestMapping(value = "/checkInfo", method = RequestMethod.GET)
