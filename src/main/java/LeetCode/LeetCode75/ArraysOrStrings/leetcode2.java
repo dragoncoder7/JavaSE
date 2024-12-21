@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.ArraysOrStrings;
 
 public class leetcode2 {
     public String gcdOfStrings(String str1, String str2) {

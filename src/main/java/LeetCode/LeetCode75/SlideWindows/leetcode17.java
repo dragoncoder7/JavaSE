@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.SlideWindows;
 
 import java.util.ArrayList;
 import java.util.List;

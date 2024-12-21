@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.TwoIndexs;
 
 public class leetcode12 {
     public static void main(String[] args) {

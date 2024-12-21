@@ -1,6 +1,4 @@
-package LeetCode.LeetCode75;
-
-import java.util.Arrays;
+package LeetCode.LeetCode75.SlideWindows;
 
 public class leetcode14 {
     public static void main(String[] args) {

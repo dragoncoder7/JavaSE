@@ -1,10 +1,6 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.TwoIndexs;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class leetcode13 {
     public static void main(String[] args) {

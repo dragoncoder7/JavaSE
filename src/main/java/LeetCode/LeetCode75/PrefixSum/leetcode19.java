@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.PrefixSum;
 
 public class leetcode19 {
     public static void main(String[] args) {

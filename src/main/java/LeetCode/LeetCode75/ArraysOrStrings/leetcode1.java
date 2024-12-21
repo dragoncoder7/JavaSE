@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.ArraysOrStrings;
 
 public class leetcode1 {
     public String mergeAlternately(String word1, String word2) {

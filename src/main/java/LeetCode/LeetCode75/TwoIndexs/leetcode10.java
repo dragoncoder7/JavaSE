@@ -1,6 +1,4 @@
-package LeetCode.LeetCode75;
-
-import java.util.Arrays;
+package LeetCode.LeetCode75.TwoIndexs;
 
 public class leetcode10 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75;
+package LeetCode.LeetCode75.ArraysOrStrings;
 
 public class leetcode8 {
     public static void main(String[] args) {
