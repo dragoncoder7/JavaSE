@@ -13,6 +13,7 @@ public class SerializeDemo implements Serializable {
 
     public static void main(String[] args) {
         Employee employee = new Employee("zhangsan", "beijing", 123456, 123);
+        
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\10262\\Desktop\\employee.ser");
             try {

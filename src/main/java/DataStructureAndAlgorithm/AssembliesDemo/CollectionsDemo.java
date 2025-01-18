@@ -29,5 +29,6 @@ public class CollectionsDemo {
         System.out.println(Collections.binarySearch(list,55));
         List<Integer> integerList = Collections.synchronizedList(list);
         System.out.println(integerList);
+
     }
 }

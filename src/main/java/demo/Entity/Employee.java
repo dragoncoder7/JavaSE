@@ -1,7 +1,10 @@
 package demo.Entity;
 
 
-public class Employee implements java.io.Serializable
+import java.io.Serializable;
+
+public class Employee implements Serializable
+
 {
     public String name;
     public String address;
