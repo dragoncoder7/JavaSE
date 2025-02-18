@@ -12,6 +12,10 @@ public class TreeNode {
       this.left = left;
       this.right = right;
   }
+  TreeNode(TreeNode left, TreeNode right) {
+      this.left = left;
+      this.right = right;
+  }
 }
     
 
