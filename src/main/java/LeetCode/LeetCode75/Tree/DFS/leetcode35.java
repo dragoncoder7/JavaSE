@@ -1,6 +1,6 @@
-package LeetCode.LeetCode75.Tree;
+package LeetCode.LeetCode75.Tree.DFS;
 
-import java.util.ArrayList;
+import LeetCode.LeetCode75.Tree.TreeNode;
 
 public class leetcode35 {
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package LeetCode.LeetCode75.Tree;
+package LeetCode.LeetCode75.Tree.DFS;
+
+import LeetCode.LeetCode75.Tree.TreeNode;
 
 public class leetcode37 {
     public static void main(String[] args) {

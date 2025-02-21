@@ -3,9 +3,11 @@ package LeetCode.LeetCode75.HashTableOrHashCollections;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class leetcode20 {
     public static void main(String[] args) {
+        ConcurrentHashMap<Object, Object> hashMap = new ConcurrentHashMap<>();
         leetcode20 leetcode20 = new leetcode20();
 
         System.out.println(leetcode20.findDifference(new int[]{1,2,3},new int[]{2,4,6}));
