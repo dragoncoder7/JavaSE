@@ -1,7 +1,5 @@
 package LeetCode.LeetCode75.Tree.DFS;
 
-import LeetCode.LeetCode75.Tree.TreeNode;
-
 public class leetcode33 {
     public static void main(String[] args) {
         leetcode33 leetcode33 = new leetcode33();

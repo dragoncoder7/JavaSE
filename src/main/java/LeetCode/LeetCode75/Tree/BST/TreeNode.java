@@ -1,4 +1,4 @@
-package LeetCode.LeetCode75.Tree;
+package LeetCode.LeetCode75.Tree.BST;
 
 //Definition for a binary tree node.
 public class TreeNode {
@@ -17,3 +17,5 @@ public class TreeNode {
       this.right = right;
   }
 }
+    
+
