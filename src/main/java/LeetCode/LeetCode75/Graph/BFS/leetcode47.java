@@ -1,14 +1,29 @@
 package LeetCode.LeetCode75.Graph.BFS;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class leetcode47 {
     private final int[] row = new int[]{-1, 1, 0, 0};
     private final int[] col = new int[]{0, 0, -1, 1};
-    public static void main(String[] args) {
-        leetcode47 leetcode47 = new leetcode47();
-        System.out.println();
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        leetcode47 leetcode471 = new leetcode47();
+        leetcode471.getClass();
+        Class<?> clazz = leetcode471.getClass();
+
+        Class<?> clazz1 = Class.forName("LeetCode.LeetCode75.Graph.BFS.leetcode47");
+        clazz1.getDeclaredConstructor().setAccessible(true);
+        leetcode47 o = (leetcode47) clazz1.getDeclaredConstructor().newInstance();
+
+        Class<?> clazz2 = leetcode47.class;
+        System.out.println(clazz1.getName());
+        System.out.println(clazz1);
+        System.out.println(Arrays.toString(clazz1.getConstructors()));
+        System.out.println(Arrays.toString(clazz1.getMethods()));
+        System.out.println(Arrays.toString(clazz1.getAnnotations()));
+        System.out.println(Arrays.toString(clazz1.getFields()));
     }
     public int nearestExit(char[][] maze, int[] entrance) {
         int m = maze.length;

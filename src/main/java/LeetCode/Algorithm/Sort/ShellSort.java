@@ -33,10 +33,10 @@ public class ShellSort {
                 // nums[j - gap] 对j来说下标差为gap的前面的值 与temp 是一组的 为啥不用nums[j] 因为j在遍历 值会变化 提前存好
                 // 当gap为1时 就是正常的插入排序算法
                 for (j = i; j >= gap && nums[j - gap] > temp; j -= gap) {
-                    nums[j] = nums[j - gap];//把大的值赋给小的值
+                    nums[j] = nums[j - gap];//更新小值为大值
                 }
 
-                nums[j] = temp;//更新原大值为小值
+                nums[j] = temp;//更新大值为小值
             }
         }
         return nums;
