@@ -25,4 +25,12 @@ public interface CommonMapper {
                and c.fieldid = b.id
                and c.selectvalue = #{value}""")
     String getMappingValue(@Param("workflowId") int workflowId,@Param("fieldName") String fieldName,@Param("value") String value);
+
+    /**
+     * 通过流程requestid获取流程当前审批状态
+     * @param requestId
+     * @return 0 创建节点 // 1 审批中 // 2 提醒 // 3 归档
+     */
+    @Select("select * from workflow_requestbase a where a.requestid = #{requestId}")
+    int getWorkflowStatus(@Param("requestId") int requestId);
 }

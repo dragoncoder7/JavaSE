@@ -137,7 +137,7 @@ public class HrServiceImp implements HrService {
             ((ObjectNode) jsonNode).put("OAFlowID", leave.getWorkflowNo());
 
 
-            map = calculate(jsonNode);
+            map = calculate(jsonNode, commonMapper.getWorkflowStatus(requestID));
 
             LOGGER.info(jsonNode.asText());
 
@@ -184,7 +184,7 @@ public class HrServiceImp implements HrService {
             ((ObjectNode) jsonNode).put("OA_ID", resetLeave.getWorkflowID());
             ((ObjectNode) jsonNode).put("K2012", resetLeave.getReason());
 
-            map = calculate(jsonNode);
+            map = calculate(jsonNode , commonMapper.getWorkflowStatus(requestID));
 
             LOGGER.info(jsonNode.asText());
 
@@ -373,9 +373,10 @@ public class HrServiceImp implements HrService {
     /**
      * 计算请假时长 以及判断是否重复请假
      * @param jsonNode 请假信息
+     * @param  currentNode 当前流程所在的节点 0 创建节点 // 1 审批中 // 2 提醒 // 3 已归档
      * @return  map结果集
      */
-    private Map<String,Object> calculate(JsonNode jsonNode){
+    private Map<String,Object> calculate(JsonNode jsonNode,int currentNode){
         Map<String,Object> map = new HashMap<>();
         ((ObjectNode) jsonNode).put("action", "getcalculator");
         LOGGER.info(jsonNode.toString());

@@ -2,6 +2,7 @@ package demo.Controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Assert;
 import demo.Service.HrService;
+import demo.entity.Leave;
 import demo.entity.User;
 import demo.mapper.mysql.AllMapper;
 import demo.mapper.mysql.UserMapper;
@@ -36,7 +37,7 @@ public class HrController {
     }
 
 
-    public HrController(HrService hrService, UserMapper userMapper, AllMapper allMapper){
+    public HrController(HrService hrService, UserMapper userMapper, AllMapper allMapper) {
         this.hrService = hrService;
         this.userMapper = userMapper;
         //testSelect();
@@ -45,27 +46,29 @@ public class HrController {
 
     /**
      * 科伦特加班数据同步HR
+     *
      * @param map 请求体响应结果
      * @return 响应结果
      */
     @RequestMapping(value = "/syncOvertime", method = RequestMethod.POST, consumes = "application/json;charset=utf-8", produces = "application/json;charset=utf-8")
-    public Map<String,Object> syncOvertime(@RequestBody Map<String,Object> map){
+    public Map<String, Object> syncOvertime(@RequestBody Map<String, Object> map) {
         LOGGER.info(map.toString());
 
         int requestId = Integer.parseInt(map.get("requestId").toString());
 
         int workflowID = Integer.parseInt(map.get("workflowId").toString());
 
-        return hrService.syncOvertime(requestId,workflowID);
+        return hrService.syncOvertime(requestId, workflowID);
     }
 
     /**
      * 科伦特请假数据同步HR
+     *
      * @param map 传递requestId
      * @return map结果集 返回到节点附加操作对结果集进行处理
      */
-    @RequestMapping(value = "/syncLeave",method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
-    public Map<String,Object> syncLeave(@RequestBody Map<String,Object> map){
+    @RequestMapping(value = "/syncLeave", method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
+    public Map<String, Object> syncLeave(@RequestBody Map<String, Object> map) {
 
         LOGGER.info(map.toString());
 
@@ -73,16 +76,17 @@ public class HrController {
 
         int workflowId = Integer.parseInt(map.get("workflowId").toString());
 
-        return hrService.syncLeave(requestId,workflowId);
+        return hrService.syncLeave(requestId, workflowId);
     }
 
     /**
      * 科伦特出差数据同步HR
+     *
      * @param map 请求体
      * @return 响应结果
      */
-    @RequestMapping(value = "/syncBusinessLeave",method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
-    public Map<String,Object> syncBusinessLeave(@RequestBody Map<String,Object> map){
+    @RequestMapping(value = "/syncBusinessLeave", method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
+    public Map<String, Object> syncBusinessLeave(@RequestBody Map<String, Object> map) {
         LOGGER.info(map.toString());
 
         int requestId = Integer.parseInt(map.get("requestId").toString());
@@ -92,22 +96,24 @@ public class HrController {
 
     /**
      * 科伦特销假数据同步HR
+     *
      * @param map 请求体
      * @return 响应结果
      */
-    @RequestMapping(value = "/syncResetLeave",method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
-    public Map<String,Object> syncResetLeave(@RequestBody Map<String,Object> map){
+    @RequestMapping(value = "/syncResetLeave", method = RequestMethod.POST, consumes = "application/json;charset=utf-8")
+    public Map<String, Object> syncResetLeave(@RequestBody Map<String, Object> map) {
         LOGGER.info(map.toString());
 
         int requestId = Integer.parseInt(map.get("requestId").toString());
 
         int workflowId = Integer.parseInt(map.get("workflowId").toString());
 
-        return hrService.syncResetLeave(requestId,workflowId);
+        return hrService.syncResetLeave(requestId, workflowId);
     }
 
     /**
      * 科伦特考勤数据同步HR
+     *
      * @param map 请求体响应结果
      * @return 响应结果
      */
@@ -122,6 +128,7 @@ public class HrController {
 
     /**
      * 科伦特奖惩数据同步HR
+     *
      * @param map 请求体响应结果
      * @return 响应结果
      */
@@ -135,11 +142,14 @@ public class HrController {
     }
 
 
-
     public static void main(String[] args) {
 
     }
 
+    /**
+     *
+     * @return
+     */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
         System.out.println(allMapper.getAllUsers());
@@ -149,11 +159,23 @@ public class HrController {
         return "res.toString()";
     }
 
+    /**
+     *
+     * @param username
+     * @param employeeId
+     * @return
+     */
     @RequestMapping(value = "/checkInfo", method = RequestMethod.GET)
     public boolean checkInfo(@Param("username") String username, @Param("employeeId") String employeeId) {
         LOGGER.info("username :" + username);
         LOGGER.info("employeeId :" + employeeId);
         return hrService.checkInfo(username, employeeId);
+    }
+
+    @RequestMapping(value = "/checkInfo1", method = RequestMethod.GET)
+    public String checkInfo1(Leave leave) {
+
+        return leave.toString();
     }
 
 }

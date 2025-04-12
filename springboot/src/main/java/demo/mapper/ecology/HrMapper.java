@@ -5,7 +5,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-
 @Mapper
 public interface HrMapper {
 
@@ -33,8 +32,9 @@ public interface HrMapper {
      * @param requestID 流程请求id
      * @return 返回加班实体集
      */
-    @Select("select b.xm,b.gh,b.jbmc1,b.jbkssj,b.jbjzsj,b.jbyysy,b.jbsqlx,b.bcmc1,b.jbssh,a.lcbh,b.flag from formtable_main_466 a,formtable_main_466_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag <> 'success'")
+    @Select("select b.id,b.xm,b.gh,b.jbmc1,b.jbkssj,b.jbjzsj,b.jbyysy,b.jbsqlx,b.bcmc1,b.jbssh,a.lcbh,b.flag from formtable_main_466 a,formtable_main_466_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag is null")
     @Results({
+            @Result(property = "id", column = "id"),
             @Result(property = "name", column = "xm"),
             @Result(property = "employeeID", column = "gh"),
             @Result(property = "type", column = "jbmc1"),
@@ -52,16 +52,14 @@ public interface HrMapper {
     @Update("update formtable_main_466_dt1 set flag = 'success' where id = #{id}")
     int updateOverWorkerFlag(@Param("id") int id);
 
-    @Select("select flag from formtable_main_466_dt1 where id = #{id}")
-    String getOverWorkerFlag(@Param("id") int id);
-
     /**
      * 补卡集合 补卡单一对多
      * @param requestID 请求id
      * @return 补卡实体集合
      */
-    @Select("select b.bdrxm,b.gh,b.bdyy,b.bdsj,a.lcbh,b.flag from formtable_main_366 a,formtable_main_366_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag <> 'success'")
+    @Select("select b.id,b.bdrxm,b.gh,b.bdyy,b.bdsj,a.lcbh,b.flag from formtable_main_366 a,formtable_main_366_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag is null")
     @Results({
+            @Result(property = "id", column = "id"),
             @Result(property = "username", column = "bdrxm"),
             @Result(property = "employeeID", column = "gh"),
             @Result(property = "reason", column = "bdyy"),
@@ -74,10 +72,7 @@ public interface HrMapper {
     @Update("update formtable_main_366_dt1 set flag = 'success' where id = #{id}")
     int updateSupplyTimeFlag(@Param("id") int id);
 
-    @Select("select flag from formtable_main_366_dt1 where id = #{id}")
-    String getSupplyTimeFlag(@Param("id") int id);
-
-    @Select("select b.id,b.gh,b.xm,a.sqsj,b.jlbzyfbsjc,b.jclx,a.gsny,b.sqyj,a.lcbh,b.flag from formtable_main_469 a,formtable_main_469_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag <> 'success' and b.flag <> 'success'")
+    @Select("select b.id,b.gh,b.xm,a.sqsj,b.jlbzyfbsjc,b.jclx,a.gsny,b.sqyj,a.lcbh,b.flag from formtable_main_469 a,formtable_main_469_dt1 b where a.requestid = #{requestID} and a.id = b.mainid and b.flag is null and b.flag is null")
     @Results({
             @Result(property = "id", column = "id"),
             @Result(property = "username", column = "xm"),
@@ -95,9 +90,6 @@ public interface HrMapper {
     
     @Update("update formtable_main_469_dt1 set flag = 'success' where id = #{id}")
     int updateRewardPunishFlag(@Param("id") int id);
-    
-    @Select("select flag from formtable_main_469_dt1 where id = #{id}")
-    String getRewardPunishFlag(@Param("id") int id);
 
 
     @Select("select a.ccrgh,a.ccrxm,a.kssj,a.jssj,a.ccscxs,a.sy,a.lcbh,a.cclx from formtable_main_459 a where a.requestid = #{requestID}")

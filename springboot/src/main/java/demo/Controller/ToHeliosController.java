@@ -36,7 +36,7 @@ public class ToHeliosController {
     @Resource
     LeaveMapper leaveMapper;
 
-    @Autowired
+    //@Autowired
     public ToHeliosController(TravelService travelService, LeaveService leaveService) {
         // 默认构造器
         this.travelService = travelService;
@@ -45,7 +45,7 @@ public class ToHeliosController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/test")
     @Transactional
-    public String test(@RequestParam int requestID){
+    public String test(@RequestParam(defaultValue = "0") int requestID){
         TravelInfo travelInfo = travelService.getTravelInfo(requestID);
         LOGGER.info(travelInfo.toString());
         return travelInfo.toString();
