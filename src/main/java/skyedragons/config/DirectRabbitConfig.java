@@ -1,4 +1,4 @@
-package com.config;
+package skyedragons.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -1,4 +1,4 @@
-package com;
+package skyedragons;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
