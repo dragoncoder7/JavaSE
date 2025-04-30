@@ -55,13 +55,13 @@ public class leetcode57 {
 
     public void backtrack(List<String> list, String[] letters, String digits, int index, StringBuffer combination) {
         if(digits.length() == index){
-            list.add(combination.toString());
+            list.add(combination.toString());//存放结果集 条件为当前临时结果的长度等于最大许可长度
         }else {
             String letter = letters[digits.charAt(index) - '2'];
             for (int i = 0; i < letter.length(); i++) {
                 combination.append(letter.charAt(i));
                 backtrack(list, letters, digits, index + 1, combination);
-                combination.deleteCharAt(index);
+                combination.deleteCharAt(index);//清空临时结果
             }
         }
     }
